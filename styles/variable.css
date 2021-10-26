@@ -1,0 +1,36 @@
+:root {
+  /* -------------------- Colors -------------------- */
+  --color-dark-blue: #2a3448;
+  --color-off-white: #f2f2f2;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-slight-black: rgba(75, 76, 94, 0.08);
+
+  /* -------------------- Themes -------------------- */
+  --color-background: var(--color-white);
+  --color-copyright-ribbon: var(--color-dark-blue);
+  --color-copyright-ribbon-text: var(--color-white);
+  --color-social-ribbon: var(--color-white);
+  --color-social-ribbon-shadow: var(--color-slight-black);
+
+  /* -------------------- Dimens -------------------- */
+  --copyright-padding: 12px;
+  --copyright-font-size: 14px;
+  --copyright-font-weight: bold;
+  --copyright-line-height: 29px;
+  --copyright-font-style: normal;
+
+  --social-ribbon-padding: 8px;
+  --social-ribbon-border-radius: 8px;
+  --social-ribbon-box-shadow: 0px 7px 35px var(--color-social-ribbon-shadow);
+}
+
+@font-face {
+  font-family: DMSans;
+  src: url(../assets/fonts/dmsans-regular.ttf);
+}
+
+@font-face {
+  font-family: DMSans700;
+  src: url(../assets/fonts/dmsans_bold_700.ttf);
+}

@@ -1,0 +1,122 @@
+body {
+  background-color: var(--color-background);
+}
+
+.ribbon__main {
+  background-color: var(--color-copyright-ribbon);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--copyright-padding);
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.ribbon__main .ribbon__main-text {
+  position: static;
+  color: var(--color-copyright-ribbon-text);
+  font-size: var(--copyright-font-size);
+  font-style: var(--copyright-font-style);
+  line-height: var(--copyright-line-height);
+  text-decoration: none !important;
+  height: 29px;
+  font-family: DMSans700;
+}
+
+.sticky__social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--social-ribbon-padding);
+  margin: 0px;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: auto;
+  top: 40%;
+  height: 125px;
+  width: 32px;
+  background: var(--color-social-ribbon);
+  border-radius: var(--social-ribbon-border-radius);
+  box-shadow: var(--social-ribbon-box-shadow);
+}
+
+.sticky__social-container a {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.navbar__main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 29px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar__main-list {
+  list-style-type: none;
+}
+
+.navbar__main-list .navbar__main-list_item {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.navbar__main a {
+  text-decoration: none;
+  color: #b9d1f2;
+}
+
+.navbar__main a:hover {
+  color: white;
+  transition: all 250ms ease;
+  -webkit-transition: all 250ms ease;
+}
+
+.navbar__main-logo {
+  position: relative;
+  float: left;
+  top: 12px;
+  max-width: 85%;
+}
+
+.navbar__menu-line {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+.navbar__menu {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .sticky__social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--social-ribbon-padding);
+    margin: 0px;
+    position: fixed;
+    left: auto;
+    right: 0px;
+    z-index: 100;
+    top: 40%;
+    height: 125px;
+    width: 32px;
+    background: var(--color-social-ribbon);
+    border-radius: var(--social-ribbon-border-radius);
+    box-shadow: var(--social-ribbon-box-shadow);
+  }
+
+  .sticky__social-container a {
+    padding: 12px;
+    cursor: pointer;
+  }
+}

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--color-background);
 }
@@ -13,6 +18,27 @@ body {
   width: 100%;
   left: 0px;
   top: 0px;
+}
+
+.ribbon__main-footer {
+  background-color: var(--color-copyright-ribbon);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--copyright-padding);
+  width: 100%;
+}
+
+.ribbon__main-footer .ribbon__main-text {
+  position: static;
+  color: var(--color-copyright-ribbon-text);
+  font-size: var(--copyright-font-size);
+  font-style: var(--copyright-font-style);
+  line-height: var(--copyright-line-height);
+  text-decoration: none !important;
+  height: 29px;
+  font-family: DMSans700;
 }
 
 .ribbon__main .ribbon__main-text {
@@ -85,6 +111,12 @@ body {
   max-width: 85%;
 }
 
+.navbar__main-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar__menu-line {
   width: 20px;
   height: 3px;
@@ -95,6 +127,188 @@ body {
 .navbar__menu {
   display: none;
 }
+
+.contact__main {
+  display: flex;
+}
+
+/* Section Title CSS start */
+.section__title {
+  font-family: var(--section-title-font-family);
+  font-style: var(--section-title-font-style);
+  font-weight: var(--section-title-font-weight);
+  font-size: var(--section-title-font-size);
+  line-height: var(--section-title-line-height);
+}
+
+.section__title-underline {
+  width: 40px;
+  height: 5px;
+  background: var(--section-title-underline-color);
+  border-radius: var(--section-title-underline-border-radius);
+  margin-top: 8px;
+}
+/* Section Title CSS end */
+
+/* Sub-section Title CSS start */
+.subsection__title {
+  font-family: var(--subsection-title-font-family);
+  font-style: var(--subsection-title-font-style);
+  font-weight: var(--subsection-title-font-weight);
+  font-size: var(--subsection-title-font-size);
+  line-height: var(--subsection-title-line-height);
+}
+
+.subsection__title-underline {
+  width: 40px;
+  height: 5px;
+  background: var(--subsection-title-underline-color);
+  border-radius: var(--subsection-title-underline-border-radius);
+  margin-top: 8px;
+}
+/* Sub-section Title CSS end */
+
+.contact__main__row {
+  display: flex;
+  justify-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contact__main__column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.contact__main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact__main-container__left {
+  width: 50%;
+}
+
+.contact__main-container__right {
+  width: 50%;
+}
+
+.contact__main-container {
+  background: url("../assets/images/hero/contact_background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
+section {
+  margin: 0 10%;
+}
+
+/* Contact Form Input Style Start */
+.contact__main-input {
+  width: 90%;
+  margin: 15px 0;
+  border-radius: var(--contact-input-border-radius);
+  box-sizing: var(--contact-input-box-sizing);
+  border: 1px solid #666666;
+  background: var(--contact-input-background);
+  padding: var(--contact-input-padding);
+
+  font-family: var(--contact-input-font-family);
+  font-style: var(--contact-input-font-style);
+  font-weight: var(--contact-input-font-weight);
+  font-size: var(--contact-input-font-size);
+  line-height: var(--contact-input-line-height);
+}
+
+.contact__main-input:focus {
+  outline: none !important;
+  width: 90%;
+  margin: 15px 0;
+  border-radius: var(--contact-input-border-radius);
+  box-sizing: var(--contact-input-box-sizing);
+  border: 1px solid #ff6536;
+  background: var(--contact-input-background);
+  padding: var(--contact-input-padding);
+
+  font-family: var(--contact-input-font-family);
+  font-style: var(--contact-input-font-style);
+  font-weight: var(--contact-input-font-weight);
+  font-size: var(--contact-input-font-size);
+  line-height: var(--contact-input-line-height);
+}
+/* Contact Form Input Style End */
+
+/* Contact Section Form Div Style Start */
+.contact__main-container__left-form {
+  margin-top: 20px;
+}
+/* Contact Section Form Div Style End */
+
+/* Contact Section Address Div Style Start */
+.contact__main-container__right-location {
+  margin: 35px 20px;
+}
+/* Contact Section Form Div Style End */
+
+/* Contact Button Style Start */
+.contact__main-button {
+  margin: 15px 0 30px 0;
+  width: 45%;
+  background-color: var(--contact-button-background);
+  border: none;
+  border-radius: var(--contact-button-radius);
+  font-family: var(--contact-button-font-family);
+  font-style: var(--contact-button-font-style);
+  font-weight: var(--contact-button-font-weight);
+  font-size: var(--contact-button-font-size);
+  line-height: var(--contact-button-line-height);
+  color: var(--contact-button-font-color);
+  padding: 16px;
+}
+/* Contact Button Style End */
+
+/* Contact Address Style Start */
+.contact__main-address {
+  margin: 15px 0;
+}
+
+.contact__main-address-heading {
+  font-family: var(--contact-address-heading-font-family);
+  font-style: var(--contact-address-heading-font-style);
+  font-weight: var(--contact-address-heading-font-weight);
+  font-size: var(--contact-address-heading-font-size);
+  line-height: var(--contact-address-heading-line-height);
+  color: var(--contact-address-heading-text-color);
+  margin: 8px 0;
+}
+
+.contact__main-address-description {
+  font-family: var(--contact-address-description-font-family);
+  font-style: var(--contact-address-description-font-style);
+  font-weight: var(--contact-address-description-font-weight);
+  font-size: var(--contact-address-description-font-size);
+  line-height: var(--contact-address-description-line-height);
+  color: var(--contact-address-description-text-color);
+  margin: 8px 0;
+}
+
+.contact__main-address__social {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contact__main-address__social-icon {
+  height: 78px;
+}
+/* Contact Address Style End */
 
 @media all and (max-width: 480px) {
   .sticky__social-container {

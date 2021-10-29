@@ -141,6 +141,12 @@ body {
   line-height: var(--section-title-line-height);
 }
 
+.section__title__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .section__title-underline {
   width: 40px;
   height: 5px;
@@ -148,7 +154,50 @@ body {
   border-radius: var(--section-title-underline-border-radius);
   margin-top: 8px;
 }
+
+.section__title-hidden {
+  font-family: var(--section-title-font-family);
+  font-style: var(--section-title-font-style);
+  font-weight: var(--section-title-font-weight);
+  font-size: var(--section-title-font-size);
+  line-height: var(--section-title-line-height);
+  background: white;
+  color: white;
+}
+.section__title-underline-hidden {
+  width: 40px;
+  height: 5px;
+  background: var(--section-title-underline-color);
+  border-radius: var(--section-title-underline-border-radius);
+  margin-top: 8px;
+  background: wheat;
+}
 /* Section Title CSS end */
+
+.mailing__subheading {
+  font-family: var(--subheading-font-family);
+  font-style: var(--subheading-font-style);
+  font-weight: var(--subheading-font-weight);
+  font-size: var(--subheading-font-size);
+  line-height: var(--subheading-line-height);
+  margin: 16px 0;
+}
+
+.mailing__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 38px;
+  padding-bottom: 250px;
+}
+
+.mailing__form__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
 
 /* Sub-section Title CSS start */
 .subsection__title {
@@ -183,11 +232,6 @@ body {
   flex: 1;
 }
 
-.contact__main-container {
-  display: flex;
-  flex-direction: row;
-}
-
 .contact__main-container__left {
   width: 50%;
 }
@@ -197,7 +241,21 @@ body {
 }
 
 .contact__main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.section__contact {
   background: url("../assets/images/hero/contact_background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: bottom;
+  margin-top: 48px;
+}
+
+.section__mailing {
+  background: url("../assets/images/mailing_section_bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
@@ -206,6 +264,41 @@ body {
 
 section {
   margin: 0 10%;
+}
+
+.mailing__form-input {
+  width: 100%;
+  margin: 15px 0;
+  padding: var(--mailing-input-padding);
+  border-radius: var(--mailing-input-border-radius);
+  box-sizing: var(--mailing-input-box-sizing);
+  border: 1px solid var(--mailing-input-background);
+  background: var(--mailing-input-background);
+  font-family: var(--mailing-input-font-family);
+  font-style: var(--mailing-input-font-style);
+  font-weight: var(--mailing-input-font-weight);
+  font-size: var(--mailing-input-font-size);
+  line-height: var(--mailing-input-line-height);
+}
+
+.mailing__form-input:focus {
+  outline: none !important;
+}
+
+.mailing__form-button {
+  margin: 15px 0;
+  width: 35%;
+  padding: var(--mailing-input-padding);
+  background-color: var(--contact-button-background);
+  border: none;
+  border-radius: var(--contact-button-radius);
+
+  font-family: var(--contact-input-font-family);
+  font-style: var(--contact-input-font-style);
+  font-weight: var(--contact-input-font-weight);
+  font-size: var(--contact-input-font-size);
+  line-height: var(--contact-input-line-height);
+  color: var(--contact-button-font-color);
 }
 
 /* Contact Form Input Style Start */
@@ -227,19 +320,7 @@ section {
 
 .contact__main-input:focus {
   outline: none !important;
-  width: 90%;
-  margin: 15px 0;
-  border-radius: var(--contact-input-border-radius);
-  box-sizing: var(--contact-input-box-sizing);
   border: 1px solid #ff6536;
-  background: var(--contact-input-background);
-  padding: var(--contact-input-padding);
-
-  font-family: var(--contact-input-font-family);
-  font-style: var(--contact-input-font-style);
-  font-weight: var(--contact-input-font-weight);
-  font-size: var(--contact-input-font-size);
-  line-height: var(--contact-input-line-height);
 }
 /* Contact Form Input Style End */
 
@@ -332,5 +413,103 @@ section {
   .sticky__social-container a {
     padding: 12px;
     cursor: pointer;
+  }
+
+  /* Contact Us Section Style Start */
+
+  .contact__main-container {
+    background: url("../assets/images/hero/contact_background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: bottom;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    margin: 0 25px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+  }
+
+  .contact__main-container__left {
+    width: 100%;
+  }
+
+  .contact__main-container__right {
+    width: 100%;
+  }
+
+  .contact__main-input {
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+    margin: 8px 0;
+    border-radius: var(--contact-input-border-radius);
+    box-sizing: var(--contact-input-box-sizing);
+    border: 1px solid #666666;
+    background: var(--contact-input-background);
+    padding: 12px 16px;
+
+    font-family: var(--contact-input-font-family);
+    font-style: var(--contact-input-font-style);
+    font-weight: var(--contact-input-font-weight);
+    font-size: var(--contact-input-font-size);
+    line-height: var(--contact-input-line-height);
+  }
+
+  .contact__main-input:focus {
+    outline: none !important;
+    border: 1px solid #ff6536;
+  }
+
+  .contact__main-button {
+    margin: 8px 0 8px 0;
+    width: 35%;
+    background-color: var(--contact-button-background);
+    border: none;
+    border-radius: var(--contact-button-radius);
+    font-family: var(--contact-button-font-family);
+    font-style: var(--contact-button-font-style);
+    font-weight: var(--contact-button-font-weight);
+    font-size: var(--contact-button-font-size);
+    line-height: var(--contact-button-line-height);
+    color: var(--contact-button-font-color);
+    padding: 16px;
+  }
+
+  .contact__main-address__social {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .contact__main-container__right-location {
+    margin: 10px 0;
+  }
+
+  .contact__main-address__social-icon {
+    height: 60px;
+  }
+
+  .section__title-hidden {
+    background: white;
+    color: white;
+    visibility: hidden;
+    display: none;
+  }
+
+  .contact__main-address-description {
+    font-family: var(--contact-address-description-font-family);
+    font-style: var(--contact-address-description-font-style);
+    font-weight: var(--contact-address-description-font-weight);
+    font-size: 16px;
+    line-height: var(--contact-address-description-line-height);
+    color: var(--contact-address-description-text-color);
+    margin: 8px 0;
   }
 }

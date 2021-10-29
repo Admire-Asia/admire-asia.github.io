@@ -18,6 +18,7 @@
   --color-contact-input-background: var(--color-white);
   --color-contact-button-background: #FF6536;
   --color-contact-address-description-color: #666666;
+  --color-mailing-input-background: #F5F5F5;
 
   /* -------------------- Dimens -------------------- */
   --copyright-padding: 12px;
@@ -59,6 +60,16 @@
   --contact-input-font-size: 18px;
   --contact-input-line-height: 150%;
 
+  --mailing-input-border-radius: 8px;
+  --mailing-input-box-sizing: border-box;
+  --mailing-input-background: var(--color-mailing-input-background);
+  --mailing-input-padding: 16px;
+  --mailing-input-font-family: DMSans;
+  --mailing-input-font-style: normal;
+  --mailing-input-font-weight: normal;
+  --mailing-input-font-size: 18px;
+  --mailing-input-line-height: 150%;
+
   --contact-button-background: var(--color-contact-button-background);
   --contact-button-radius: 8px;
   --contact-button-font-family: DMSans700;
@@ -82,6 +93,12 @@
   --contact-address-description-line-height: 150%;
   --contact-address-description-text-color: var(--color-contact-address-description-color);
 
+  --subheading-font-family: DMSans500;
+  --subheading-font-style: normal;
+  --subheading-font-weight: 500;
+  --subheading-font-size: 20px;
+  --subheading-line-height: 43px;
+
 }
 
 @font-face {
@@ -92,4 +109,9 @@
 @font-face {
   font-family: DMSans700;
   src: url(../assets/fonts/dmsans_bold_700.ttf);
+}
+
+@font-face {
+  font-family: DMSans500;
+  src: url(../assets/fonts/dmsans_medium_500.ttf);
 }

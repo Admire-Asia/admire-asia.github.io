@@ -1,0 +1,122 @@
+.section__mailing {
+  background: url("../assets/images/mailing_section_bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
+.section__title__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mailing__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 38px;
+  padding-bottom: 250px;
+}
+
+.mailing__subheading {
+  font-family: var(--subheading-font-family);
+  font-style: var(--subheading-font-style);
+  font-weight: var(--subheading-font-weight);
+  font-size: var(--subheading-font-size);
+  line-height: var(--subheading-line-height);
+  margin: 16px 0;
+}
+
+.mailing__form__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.mailing__form-input {
+  width: 100%;
+  margin: 15px 0;
+  padding: var(--mailing-input-padding);
+  border-radius: var(--mailing-input-border-radius);
+  box-sizing: var(--mailing-input-box-sizing);
+  border: 1px solid var(--mailing-input-background);
+  background: var(--mailing-input-background);
+  font-family: var(--mailing-input-font-family);
+  font-style: var(--mailing-input-font-style);
+  font-weight: var(--mailing-input-font-weight);
+  font-size: var(--mailing-input-font-size);
+  line-height: var(--mailing-input-line-height);
+}
+
+.mailing__form-input:focus {
+  outline: none !important;
+}
+
+.mailing__form-button {
+  margin: 15px 0;
+  width: 35%;
+  padding: var(--mailing-input-padding);
+  background-color: var(--contact-button-background);
+  border: none;
+  border-radius: var(--contact-button-radius);
+  font-family: var(--contact-button-font-family);
+  font-style: var(--contact-button-font-style);
+  font-weight: var(--contact-button-font-weight);
+  font-size: var(--contact-button-font-size);
+  line-height: var(--contact-button-line-height);
+  color: var(--contact-button-font-color);
+}
+
+@media all and (max-width: 480px) {
+  .section__mailing {
+    background: none;
+  }
+
+  .section__title__center {
+    display: initial;
+  }
+
+  .mailing__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .mailing__subheading {
+    font-family: var(--subheading-font-family);
+    font-style: var(--subheading-font-style);
+    font-weight: var(--subheading-font-weight);
+    font-size: 18px;
+    line-height: 150%;
+    margin: 16px 0;
+  }
+
+  .mailing__form__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mailing__form-button {
+    margin: 5px 0;
+    width: 35%;
+    padding: var(--mailing-input-padding);
+    background-color: var(--contact-button-background);
+    border: none;
+    border-radius: var(--contact-button-radius);
+    font-family: var(--contact-button-font-family);
+    font-style: var(--contact-button-font-style);
+    font-weight: var(--contact-button-font-weight);
+    font-size: var(--contact-button-font-size);
+    line-height: var(--contact-button-line-height);
+    color: var(--contact-button-font-color);
+  }
+}

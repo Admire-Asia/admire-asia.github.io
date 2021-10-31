@@ -1,141 +1,145 @@
 :root {
-  /* -------------------- Colors -------------------- */
-  --color-dark-blue: #2a3448;
-  --color-off-white: #f2f2f2;
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --color-slight-black: rgba(75, 76, 94, 0.08);
-  --color-purple: #5d58f7;
-  --color-grey: #666666;
+	/* -------------------- Colors -------------------- */
+	--color-dark-blue: #2a3448;
+	--color-off-white: #f2f2f2;
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-slight-black: rgba(75, 76, 94, 0.08);
+	--color-purple: #5d58f7;
+	--color-grey: #666666;
 
-  /* -------------------- Themes -------------------- */
-  --color-background: var(--color-white);
-  --color-copyright-ribbon: var(--color-dark-blue);
-  --color-copyright-ribbon-text: var(--color-white);
-  --color-social-ribbon: var(--color-white);
-  --color-social-ribbon-shadow: var(--color-slight-black);
-  --color-contact-input-border: var(--color-grey);
-  --color-contact-input-background: var(--color-white);
-  --color-contact-button-background: #ff6536;
-  --color-contact-address-description-color: #666666;
-  --color-mailing-input-background: #f5f5f5;
-  --color-hww-title: #FF6536;
-  --color-hww-description: #666666;
+	/* -------------------- Themes -------------------- */
+	--color-background: var(--color-white);
+	--color-copyright-ribbon: var(--color-dark-blue);
+	--color-copyright-ribbon-text: var(--color-white);
+	--color-social-ribbon: var(--color-white);
+	--color-social-ribbon-shadow: var(--color-slight-black);
+	--color-contact-input-border: var(--color-grey);
+	--color-contact-input-background: var(--color-white);
+	--color-contact-button-background: #ff6536;
+	--color-contact-address-description-color: #666666;
+	--color-mailing-input-background: #f5f5f5;
+	--color-hww-title: #ff6536;
+	--color-hww-description: #666666;
 
-  /* -------------------- Dimens -------------------- */
-  --copyright-padding: 12px;
-  --copyright-font-size: 14px;
-  --copyright-font-weight: bold;
-  --copyright-line-height: 29px;
-  --copyright-font-style: normal;
+	/* -------------------- Dimens -------------------- */
+	--copyright-padding: 12px;
+	--copyright-font-size: 14px;
+	--copyright-font-weight: bold;
+	--copyright-line-height: 29px;
+	--copyright-font-style: normal;
 
-  --social-ribbon-padding: 8px;
-  --social-ribbon-border-radius: 8px;
-  --social-ribbon-box-shadow: 0px 7px 35px var(--color-social-ribbon-shadow);
+	--social-ribbon-padding: 8px;
+	--social-ribbon-border-radius: 8px;
+	--social-ribbon-box-shadow: 0px 7px 35px var(--color-social-ribbon-shadow);
 
-  --section-title-font-style: normal;
-  --section-title-font-weight: bold;
-  --section-title-font-size: 24px;
-  --section-title-line-height: 150%;
-  --section-title-color: var(--color-black);
-  --section-title-underline-color: var(--color-purple);
-  --section-title-underline-border-radius: 8px;
-  --section-title-font-family: DMSans700;
+	--section-title-font-style: normal;
+	--section-title-font-weight: bold;
+	--section-title-font-size: 24px;
+	--section-title-line-height: 150%;
+	--section-title-color: var(--color-black);
+	--section-title-underline-color: var(--color-purple);
+	--section-title-underline-border-radius: 8px;
+	--section-title-font-family: DMSans700;
 
-  --subsection-title-font-style: normal;
-  --subsection-title-font-weight: bold;
-  --subsection-title-font-size: 18px;
-  --subsection-title-line-height: 14px;
-  --subsection-title-color: var(--color-black);
-  --subsection-title-underline-color: var(--color-purple);
-  --subsection-title-underline-border-radius: 8px;
-  --subsection-title-font-family: DMSans700;
+	--subsection-title-font-style: normal;
+	--subsection-title-font-weight: bold;
+	--subsection-title-font-size: 18px;
+	--subsection-title-line-height: 14px;
+	--subsection-title-color: var(--color-black);
+	--subsection-title-underline-color: var(--color-purple);
+	--subsection-title-underline-border-radius: 8px;
+	--subsection-title-font-family: DMSans700;
 
-  --contact-input-border-radius: 8px;
-  --contact-input-box-sizing: border-box;
-  --contact-input-border: 1px solid var(--color-contact-input-border);
-  --contact-input-background: var(--color-contact-input-background);
-  --contact-input-padding: 16px;
-  --contact-input-font-family: DMSans;
-  --contact-input-font-style: normal;
-  --contact-input-font-weight: normal;
-  --contact-input-font-size: 18px;
-  --contact-input-line-height: 150%;
+	--contact-input-border-radius: 8px;
+	--contact-input-box-sizing: border-box;
+	--contact-input-border: 1px solid var(--color-contact-input-border);
+	--contact-input-background: var(--color-contact-input-background);
+	--contact-input-padding: 16px;
+	--contact-input-font-family: DMSans;
+	--contact-input-font-style: normal;
+	--contact-input-font-weight: normal;
+	--contact-input-font-size: 18px;
+	--contact-input-line-height: 150%;
 
-  --mailing-input-border-radius: 8px;
-  --mailing-input-box-sizing: border-box;
-  --mailing-input-background: var(--color-mailing-input-background);
-  --mailing-input-padding: 16px;
-  --mailing-input-font-family: DMSans;
-  --mailing-input-font-style: normal;
-  --mailing-input-font-weight: normal;
-  --mailing-input-font-size: 18px;
-  --mailing-input-line-height: 150%;
+	--mailing-input-border-radius: 8px;
+	--mailing-input-box-sizing: border-box;
+	--mailing-input-background: var(--color-mailing-input-background);
+	--mailing-input-padding: 16px;
+	--mailing-input-font-family: DMSans;
+	--mailing-input-font-style: normal;
+	--mailing-input-font-weight: normal;
+	--mailing-input-font-size: 18px;
+	--mailing-input-line-height: 150%;
 
-  --contact-button-background: var(--color-contact-button-background);
-  --contact-button-radius: 8px;
-  --contact-button-font-family: DMSans700;
-  --contact-button-font-style: normal;
-  --contact-button-font-weight: normal;
-  --contact-button-font-color: var(--color-white);
-  --contact-button-font-size: 20px;
-  --contact-button-line-height: 20px;
+	--contact-button-background: var(--color-contact-button-background);
+	--contact-button-radius: 8px;
+	--contact-button-font-family: DMSans700;
+	--contact-button-font-style: normal;
+	--contact-button-font-weight: normal;
+	--contact-button-font-color: var(--color-white);
+	--contact-button-font-size: 20px;
+	--contact-button-line-height: 20px;
 
-  --contact-address-heading-font-family: DMSans;
-  --contact-address-heading-font-style: normal;
-  --contact-address-heading-font-weight: bold;
-  --contact-address-heading-font-size: 18px;
-  --contact-address-heading-line-height: 150%;
-  --contact-address-heading-text-color: var(--color-black);
+	--contact-address-heading-font-family: DMSans;
+	--contact-address-heading-font-style: normal;
+	--contact-address-heading-font-weight: bold;
+	--contact-address-heading-font-size: 18px;
+	--contact-address-heading-line-height: 150%;
+	--contact-address-heading-text-color: var(--color-black);
 
-  --contact-address-description-font-family: DMSans;
-  --contact-address-description-font-style: normal;
-  --contact-address-description-font-weight: normal;
-  --contact-address-description-font-size: 18px;
-  --contact-address-description-line-height: 150%;
-  --contact-address-description-text-color: var(
-    --color-contact-address-description-color
-  );
+	--contact-address-description-font-family: DMSans;
+	--contact-address-description-font-style: normal;
+	--contact-address-description-font-weight: normal;
+	--contact-address-description-font-size: 18px;
+	--contact-address-description-line-height: 150%;
+	--contact-address-description-text-color: var(
+		--color-contact-address-description-color
+	);
 
-  --aboutus-description-font-family: DMSans;
-  --aboutus-description-font-style: normal;
-  --aboutus-description-font-weight: normal;
-  --aboutus-description-font-size: 18px;
-  --aboutus-description-line-height: 23px;
-  --aboutus-description-text-color: var(--color-grey);
+	--aboutus-description-font-family: DMSans;
+	--aboutus-description-font-style: normal;
+	--aboutus-description-font-weight: normal;
+	--aboutus-description-font-size: 18px;
+	--aboutus-description-line-height: 23px;
+	--aboutus-description-text-color: var(--color-grey);
 
-  --subheading-font-family: DMSans500;
-  --subheading-font-style: normal;
-  --subheading-font-weight: 500;
-  --subheading-font-size: 20px;
-  --subheading-line-height: 43px;
+	--subheading-font-family: DMSans500;
+	--subheading-font-style: normal;
+	--subheading-font-weight: 500;
+	--subheading-font-size: 20px;
+	--subheading-line-height: 43px;
 
-  --hww-title-font-family: DMSans700;
-  --hww-title-font-style: normal;
-  --hww-title-font-weight: bold;
-  --hww-title-font-size: 18px;
-  --hww-title-line-height: 20px;
-  --hww-title-text-color: var(--color-hww-title);
+	--hww-title-font-family: DMSans700;
+	--hww-title-font-style: normal;
+	--hww-title-font-weight: bold;
+	--hww-title-font-size: 18px;
+	--hww-title-line-height: 20px;
+	--hww-title-text-color: var(--color-hww-title);
 
-  --hww-description-font-family: DMSans;
-  --hww-description-font-style: normal;
-  --hww-description-font-weight: normal;
-  --hww-description-font-size: 14px;
-  --hww-description-line-height: 15px;
-  --hww-description-text-color: var(--color-hww-description);
+	--hww-description-font-family: DMSans;
+	--hww-description-font-style: normal;
+	--hww-description-font-weight: normal;
+	--hww-description-font-size: 14px;
+	--hww-description-line-height: 15px;
+	--hww-description-text-color: var(--color-hww-description);
+
+	--testimonials-font-family: DMSans500;
+	--testimonials-font-style: bold;
+	--testimonials-font-weight: 500;
 }
 
 @font-face {
-  font-family: DMSans;
-  src: url(../assets/fonts/dmsans-regular.ttf);
+	font-family: DMSans;
+	src: url(../assets/fonts/dmsans-regular.ttf);
 }
 
 @font-face {
-  font-family: DMSans700;
-  src: url(../assets/fonts/dmsans_bold_700.ttf);
+	font-family: DMSans700;
+	src: url(../assets/fonts/dmsans_bold_700.ttf);
 }
 
 @font-face {
-  font-family: DMSans500;
-  src: url(../assets/fonts/dmsans_medium_500.ttf);
+	font-family: DMSans500;
+	src: url(../assets/fonts/dmsans_medium_500.ttf);
 }

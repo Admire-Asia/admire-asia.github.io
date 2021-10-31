@@ -11,6 +11,7 @@ body {
   background-color: var(--color-copyright-ribbon);
   position: fixed;
   display: flex;
+  z-index: 100;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -75,63 +76,6 @@ body {
   cursor: pointer;
 }
 
-.navbar__main {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 29px;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.navbar__main-list {
-  list-style-type: none;
-}
-
-.navbar__main-list .navbar__main-list_item {
-  display: inline-block;
-  padding: 20px 10px;
-}
-
-.navbar__main a {
-  text-decoration: none;
-  color: #b9d1f2;
-}
-
-.navbar__main a:hover {
-  color: white;
-  transition: all 250ms ease;
-  -webkit-transition: all 250ms ease;
-}
-
-.navbar__main-logo {
-  position: relative;
-  float: left;
-  top: 12px;
-  max-width: 85%;
-}
-
-.navbar__main-background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar__menu-line {
-  width: 20px;
-  height: 3px;
-  background-color: white;
-  margin-bottom: 4px;
-}
-
-.navbar__menu {
-  display: none;
-}
-
-.contact__main {
-  display: flex;
-}
-
 /* Section Title CSS start */
 .section__title {
   font-family: var(--section-title-font-family);
@@ -186,21 +130,6 @@ body {
 }
 /* Sub-section Title CSS end */
 
-.contact__main__row {
-  display: flex;
-  justify-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.contact__main__column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-
 section {
   margin: 0 10%;
 }
@@ -228,8 +157,6 @@ section {
     padding: 12px;
     cursor: pointer;
   }
-
-  /* Contact Us Section Style Start */
 
   section {
     margin: 0 25px;

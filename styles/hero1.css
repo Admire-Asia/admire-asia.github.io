@@ -19,6 +19,16 @@
   /* height: 550px; */
 }
 
+#carousel__main {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.carousel__main-transition {
+  transition: transform 0.7s ease-in-out;
+}
+
 .hero__aunty {
   flex: 20%;
   z-index: 2;
@@ -32,11 +42,13 @@
 }
 
 .hero__carousel {
+  overflow: hidden;
   flex: 40%;
 }
 
 .hero__carousel-img {
   width: 100%;
+  flex-shrink: 0;
   /* height: 90%; */
 }
 

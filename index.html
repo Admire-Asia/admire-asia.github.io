@@ -14,14 +14,8 @@
     <link rel="stylesheet" href="./styles/sectionTestimonials.css" />
     <link rel="stylesheet" href="./styles/navbar2.css" />
     <link rel="stylesheet" href="./styles/hero1.css" />
-    <link rel="stylesheet" href="./styles/animation.css" />
+    <!-- <link rel="stylesheet" href="./styles/animation.css" /> -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
     <title>Admire Asia</title>
   </head>
 
@@ -62,27 +56,28 @@
 
       <div class="hero__main">
         <div class="hero__carousel">
-          <div class="carousel__main">
+          <div id="carousel__main" class="carousel__main-transition">
             <img
               class="hero__carousel-img"
+              data-position="1"
               src="./assets/images/hero/dubai.png"
             />
 
             <img
               class="hero__carousel-img"
-              style="display: none"
+              data-position="2"
               src="./assets/images/hero/dubai.png"
             />
 
             <img
               class="hero__carousel-img"
-              style="display: none"
+              data-position="3"
               src="./assets/images/hero/dubai.png"
             />
 
             <img
               class="hero__carousel-img"
-              style="display: none"
+              data-position="4"
               src="./assets/images/hero/dubai.png"
             />
           </div>
@@ -528,21 +523,7 @@
     <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./js/testimonial-animation.js"></script>
+    <script src="./js/hero-animation.js"></script>
     <script src="./main.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

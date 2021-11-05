@@ -1,25 +1,545 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/def.css" />
+    <link rel="stylesheet" href="./styles/variable.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/sectionContact.css" />
+    <link rel="stylesheet" href="./styles/sectionMailing.css" />
+    <link rel="stylesheet" href="./styles/sectionAboutus.css" />
+    <link rel="stylesheet" href="./styles/sectionHww.css" />
+    <link rel="stylesheet" href="./styles/sectionTestimonials.css" />
+    <link rel="stylesheet" href="./styles/navbar2.css" />
+    <link rel="stylesheet" href="./styles/hero1.css" />
+    <link rel="stylesheet" href="./styles/animation.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Admire Asia</title>
   </head>
-  <style>
-    html {
-      font-size: 10px;
-    }
-  </style>
+
   <body>
-    <div class="hero__main">
-      <div class="hero__carousel">
-        <img class="hero__carousel-img" src="./assets/images/hero/dubai.png" />
-      </div>
-      <div class="hero__aunty">
-        <img class="hero__aunty-img" src="./assets/images/hero/girl_img.png" />
+    <div class="ribbon__main">
+      <a class="ribbon__main-text" href="www.google.com">
+        Ready to travel again? <u>Read Travel Guidelines</u>
+      </a>
+    </div>
+
+    <div class="navigation__container">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <a href="#"
+            ><img src="./assets/images/admire_asia_logo.png" alt="Admire Asia"
+          /></a>
+        </div>
+        <ul class="nav-list" id="naviList">
+          <li class="list-item">
+            <a href="#" class="menu-list-text">Plan Trip</a>
+          </li>
+          <li class="list-item">
+            <a href="#sectionAboutUs" class="menu-list-text">About Us</a>
+          </li>
+          <li class="list-item">
+            <a href="#sectionHowWeWork" class="menu-list-text">How We Work</a>
+          </li>
+          <li class="list-item">
+            <a href="#sectionContactUs" class="menu-list-text">Contact Us</a>
+          </li>
+        </ul>
+        <div class="menu" id="toggleButton">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line no-bottom"></div>
+        </div>
+      </nav>
+
+      <div class="hero__main">
+        <div class="hero__carousel">
+          <div class="carousel-item active" style="display: block">
+            <img
+              class="hero__carousel-img d-flex"
+              src="./assets/images/hero/dubai.png"
+            />
+
+            <img
+              class="hero__carousel-img d-flex"
+              src="./assets/images/hero/dubai.png"
+            />
+
+            <img
+              class="hero__carousel-img d-flex"
+              src="./assets/images/hero/dubai.png"
+            />
+
+            <img
+              class="hero__carousel-img d-flex"
+              src="./assets/images/hero/dubai.png"
+            />
+          </div>
+        </div>
+        <div class="hero__aunty">
+          <img
+            class="hero__aunty-img"
+            src="./assets/images/hero/girl_img.png"
+          />
+        </div>
       </div>
     </div>
+
+    <div class="sticky__social-container">
+      <a href="#">
+        <img
+          width="16"
+          height="16"
+          title=""
+          alt=""
+          onmouseover="this.src='./assets/images/socials/ic_instagram_orange.svg'"
+          onmouseout="this.src='./assets/images/socials/ic_instagram.svg'"
+          src="./assets/images/socials/ic_instagram.svg"
+      /></a>
+      <a href="#"
+        ><img
+          width="16"
+          height="16"
+          title=""
+          alt=""
+          onmouseover="this.src='./assets/images/socials/ic_facebook_orange.svg'"
+          onmouseout="this.src='./assets/images/socials/ic_facebook.svg'"
+          src="./assets/images/socials/ic_facebook.svg"
+      /></a>
+      <a href="#"
+        ><img
+          width="16"
+          height="16"
+          title=""
+          alt=""
+          onmouseover="this.src='./assets/images/socials/ic_twitter_orange.svg'"
+          onmouseout="this.src='./assets/images/socials/ic_twitter.svg'"
+          src="./assets/images/socials/ic_twitter.svg"
+      /></a>
+    </div>
+    <!-- Sticky Socials ribbon end -->
+    <div class="section__aboutus">
+      <section id="sectionAboutUs">
+        <div class="container__aboutus-main">
+          <div class="section__title">
+            About Us
+            <div class="section__title-underline"></div>
+          </div>
+
+          <div class="aboutus__content">
+            <div class="aboutus__content-container__left">
+              <div class="aboutus__content-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                sed lacinia leo, et volutpat magna. Integer eu viverra dolor, ut
+                tincidunt augue. Ut feugiat sem id enim lobortis, at aliquam
+                arcu lobortis. Suspendisse sed dui eget leo vestibulum finibus
+                eu in odio. Cras non porttitor mauris.
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                sed lacinia leo, et volutpat magna. Integer eu viverra dolor, ut
+                tincidunt augue. Ut feugiat sem id enim lobortis, at aliquam
+                arcu lobortis.
+              </div>
+            </div>
+
+            <div class="aboutus__content-container__right">
+              <div class="aboutus__content-container__right-right__image">
+                <img src="./assets/images/aboutus/video_bg.png" />
+              </div>
+              <div class="aboutus__content-container__right-left__image">
+                <img src="./assets/images/aboutus/video_tm.png" />
+              </div>
+            </div>
+          </div>
+          <div class="aboutus__feature">
+            <div class="aboutus__feature-img">
+              <img src="./assets/images/aboutus/ic_travel.png" />
+            </div>
+            <div class="aboutus__feature-img">
+              <img src="./assets/images/aboutus/ic_ready.png" />
+            </div>
+            <div class="aboutus__feature-img">
+              <img src="./assets/images/aboutus/ic_take_me_to_the_sea.png" />
+            </div>
+            <div class="aboutus__feature-img">
+              <img src="./assets/images/aboutus/ic_around_the_world.png" />
+            </div>
+            <div class="aboutus__feature-img">
+              <img src="./assets/images/aboutus/ic_explore_more.png" />
+            </div>
+            <div class="aboutus__feature-img">
+              <img src="./assets/images/aboutus/ic_sweet_summer.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <br /><br />
+
+    <div class="section__hww">
+      <section id="sectionHowWeWork">
+        <div class="section__title__center">
+          <div class="section__title">
+            How we work
+            <div class="section__title-underline"></div>
+          </div>
+        </div>
+        <div class="hww__each-content-image">
+          <div class="hww__image-details">
+            <img class="hww_image" src="./assets/images/howWeWork/HWW1.png" />
+            <div class="hww__image-text-details">
+              Understanding your Preferences
+            </div>
+            <div class="hww__image-text-small">
+              Founded in 1996 in Amsterdam, traveloky has grown from a small
+              Dutch start4up to one of the world’s leading digital travel
+              companies.
+            </div>
+          </div>
+          <div class="hww__image-details">
+            <img class="hww_image" src="./assets/images/howWeWork/HWW2.png" />
+            <div class="hww__image-text-details" style="margin-top: 20px">
+              The Travel Draft
+            </div>
+            <div class="hww__image-text-small">
+              Founded in 1996 in Amsterdam, traveloky has grown from a small
+              Dutch start4up to one of the world’s leading digital travel
+              companies.
+            </div>
+          </div>
+          <div class="hww__image-details">
+            <img class="hww_image" src="./assets/images/howWeWork/HWW3.png" />
+            <div class="hww__image-text-details">
+              Your Dream Vacation Delivered
+            </div>
+            <div class="hww__image-text-small">
+              Founded in 1996 in Amsterdam, traveloky has grown from a small
+              Dutch start4up to one of the world’s leading digital travel
+              companies.
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="section__testimonials">
+      <section id="sectionTestimonial">
+        <div class="section__title__center">
+          <div class="section__title">
+            What Travellers Are Saying
+            <div class="section__title-underline"></div>
+          </div>
+        </div>
+
+        <div class="testi-wrap">
+          <div
+            class="client-single active position-1"
+            data-position="position-1"
+          >
+            <div class="client-img">
+              <img src="./assets/images/testimonials/img_1.png" alt="" />
+            </div>
+            <div class="client-comment">
+              <div class="client-comment-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </div>
+              <div class="client-comment-author">- Maria Jones</div>
+            </div>
+          </div>
+
+          <div
+            class="client-single inactive position-2"
+            data-position="position-2"
+          >
+            <div class="client-img">
+              <img src="./assets/images/testimonials/img_2.png" alt="" />
+            </div>
+            <div class="client-comment">
+              <div class="client-comment-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </div>
+              <div class="client-comment-author">- Maria Jones</div>
+            </div>
+          </div>
+
+          <div
+            class="client-single inactive position-3"
+            data-position="position-3"
+          >
+            <div class="client-img">
+              <img src="./assets/images/testimonials/img_3.png" alt="" />
+            </div>
+            <div class="client-comment">
+              <div class="client-comment-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </div>
+              <div class="client-comment-author">- Maria Jones</div>
+            </div>
+          </div>
+
+          <div
+            class="client-single inactive position-4"
+            data-position="position-4"
+          >
+            <div class="client-img">
+              <img src="./assets/images/testimonials/img_4.png" alt="" />
+            </div>
+            <div class="client-comment">
+              <div class="client-comment-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </div>
+              <div class="client-comment-author">- Maria Jones</div>
+            </div>
+          </div>
+
+          <div
+            class="client-single inactive position-5"
+            data-position="position-5"
+          >
+            <div class="client-img">
+              <img src="./assets/images/testimonials/img_5.png" alt="" />
+            </div>
+            <div class="client-comment">
+              <div class="client-comment-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </div>
+              <div class="client-comment-author">- Maria Jones</div>
+            </div>
+          </div>
+
+          <div
+            class="client-single inactive position-6"
+            data-position="position-6"
+          >
+            <div class="client-img">
+              <img src="./assets/images/testimonials/img_6.png" alt="" />
+            </div>
+            <div class="client-comment">
+              <div class="client-comment-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </div>
+              <div class="client-comment-author">- Maria Jones</div>
+            </div>
+          </div>
+
+          <div
+            class="client-single inactive position-7"
+            data-position="position-7"
+          >
+            <div class="client-img">
+              <img src="./assets/images/testimonials/img_7.png" alt="" />
+            </div>
+            <div class="client-comment">
+              <div class="client-comment-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </div>
+              <div class="client-comment-author">- Maria Jones</div>
+            </div>
+          </div>
+
+          <div
+            class="client-single inactive position-8"
+            data-position="position-8"
+          >
+            <div class="client-img">
+              <img src="./assets/images/testimonials/img_8.png" alt="" />
+            </div>
+            <div class="client-comment">
+              <div class="client-comment-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </div>
+              <div class="client-comment-author">- Maria Jones</div>
+            </div>
+          </div>
+
+          <div class="arrow__buttons"></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="section__mailing">
+      <section id="sectionMailing">
+        <div>
+          <div class="section__title__center">
+            <div class="section__title">
+              Join our mailing list
+              <div class="section__title-underline"></div>
+            </div>
+          </div>
+          <div class="mailing__form">
+            <div class="mailing__subheading">
+              Never miss an update and Get a free consultation call with us
+              <div class="mailing__form__main">
+                <input
+                  type="email"
+                  placeholder="Enter Email Address"
+                  class="mailing__form-input"
+                />
+                <button type="button" class="mailing__form-button">Join</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="section__contact">
+      <section id="sectionContactUs">
+        <div class="contact__main-container">
+          <div class="contact__main-container__left">
+            <div class="section__title">
+              Contact Us
+              <div class="section__title-underline"></div>
+            </div>
+
+            <div class="contact__main-container__left-form">
+              <form method="">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="contact__main-input"
+                />
+                <input
+                  type="text"
+                  placeholder="Email"
+                  class="contact__main-input"
+                />
+                <input
+                  type="number"
+                  placeholder="Mobile Number"
+                  class="contact__main-input"
+                />
+                <textarea
+                  rows="4"
+                  placeholder="What you want to tell us"
+                  class="contact__main-input"
+                  style="resize: none"
+                ></textarea>
+
+                <button type="button" class="contact__main-button">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="contact__main-container__right">
+            <div class="section__title-hidden">
+              Contact Us
+              <div class="section__title-underline-hidden"></div>
+            </div>
+
+            <div class="contact__main-container__right-location">
+              <div class="subsection__title">
+                Address
+                <div class="subsection__title-underline"></div>
+              </div>
+              <div class="contact__main-address">
+                <div class="contact__main-address-heading">India</div>
+                <div class="contact__main-address-description">
+                  Level 9, Tower 2, World Trade Center, EON Free Zone, Kharadi,
+                  Pune, Maharashtra 411014
+                </div>
+
+                <div class="contact__main-address-heading">Thailand</div>
+                <div class="contact__main-address-description">
+                  Level 9, Tower 2, World Trade Center, EON Free Zone, Kharadi,
+                  Pune, Maharashtra 411014
+                </div>
+
+                <div class="contact__main-address-heading">Singapore</div>
+                <div class="contact__main-address-description">
+                  Level 9, Tower 2, World Trade Center, EON Free Zone, Kharadi,
+                  Pune, Maharashtra 411014
+                </div>
+              </div>
+
+              <div class="contact__main-address__social">
+                <a href="#">
+                  <img
+                    src="./assets/images/socials/ic_round_email.png"
+                    class="contact__main-address__social-icon"
+                  />
+                </a>
+
+                <a href="#">
+                  <img
+                    src="./assets/images/socials/ic_round_phone.png"
+                    class="contact__main-address__social-icon"
+                    alt=""
+                  />
+                </a>
+
+                <img
+                  src="./assets/images/socials/ic_round_whatsapp.png"
+                  class="contact__main-address__social-icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="ribbon__main-footer">
+        <a class="ribbon__main-text">
+          &copy 2021 Admireasia.com. All Rights Reserved.
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/testimonial-animation.js"></script>
+    <script src="./main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

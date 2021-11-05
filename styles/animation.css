@@ -1,0 +1,30 @@
+@keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.carousel__main img:nth-of-type(1) {
+  animation-delay: 6s;
+}
+
+.carousel__main img:nth-of-type(2) {
+  animation-delay: 4s;
+}
+
+.carousel__main img:nth-of-type(3) {
+  animation-delay: 2s;
+}
+
+.carousel__main img:nth-of-type(4) {
+  animation-delay: 0s;
+}

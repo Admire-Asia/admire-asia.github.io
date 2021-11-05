@@ -12,3 +12,13 @@ for (let index = 0; index < listItem.length; index++) {
     naviList.className.toggle("deactive");
   });
 }
+
+$("a").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $($(this).attr("href")).offset().top,
+    },
+    500
+  );
+  return false;
+});

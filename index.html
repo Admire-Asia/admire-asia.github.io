@@ -12,8 +12,16 @@
     <link rel="stylesheet" href="./styles/sectionAboutus.css" />
     <link rel="stylesheet" href="./styles/sectionHww.css" />
     <link rel="stylesheet" href="./styles/sectionTestimonials.css" />
-    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/navbar2.css" />
+    <link rel="stylesheet" href="./styles/hero1.css" />
+    <link rel="stylesheet" href="./styles/animation.css" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <title>Admire Asia</title>
   </head>
 
@@ -24,33 +32,69 @@
       </a>
     </div>
 
-    <!-- Navbar  Section -->
-    <nav class="navbar" style="margin-top: 500px">
-      <div class="nav-logo">
-        <a href="#"
-          ><img src="./assets/images/admire_asia_logo.png" alt="Admire Asia"
-        /></a>
+    <div class="navigation__container">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <a href="#"
+            ><img src="./assets/images/admire_asia_logo.png" alt="Admire Asia"
+          /></a>
+        </div>
+        <ul class="nav-list" id="naviList">
+          <li class="list-item">
+            <a href="#" class="menu-list-text">Plan Trip</a>
+          </li>
+          <li class="list-item">
+            <a href="#sectionAboutUs" class="menu-list-text">About Us</a>
+          </li>
+          <li class="list-item">
+            <a href="#sectionHowWeWork" class="menu-list-text">How We Work</a>
+          </li>
+          <li class="list-item">
+            <a href="#sectionContactUs" class="menu-list-text">Contact Us</a>
+          </li>
+        </ul>
+        <div class="menu" id="toggleButton">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line no-bottom"></div>
+        </div>
+      </nav>
+
+      <div class="hero__main">
+        <div class="hero__carousel">
+          <div class="carousel__main">
+            <img
+              class="hero__carousel-img"
+              src="./assets/images/hero/dubai.png"
+            />
+
+            <img
+              class="hero__carousel-img"
+              style="display: none"
+              src="./assets/images/hero/dubai.png"
+            />
+
+            <img
+              class="hero__carousel-img"
+              style="display: none"
+              src="./assets/images/hero/dubai.png"
+            />
+
+            <img
+              class="hero__carousel-img"
+              style="display: none"
+              src="./assets/images/hero/dubai.png"
+            />
+          </div>
+        </div>
+        <div class="hero__aunty">
+          <img
+            class="hero__aunty-img"
+            src="./assets/images/hero/girl_img.png"
+          />
+        </div>
       </div>
-      <ul class="nav-list" id="naviList">
-        <li class="list-item">
-          <a href="#">Plan Trip</a>
-        </li>
-        <li class="list-item">
-          <a href="#">About Us</a>
-        </li>
-        <li class="list-item">
-          <a href="#">How We Work</a>
-        </li>
-        <li class="list-item">
-          <a href="#">Contact Us</a>
-        </li>
-      </ul>
-      <div class="menu" id="toggleButton">
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-      </div>
-    </nav>
+    </div>
 
     <div class="sticky__social-container">
       <a href="#">
@@ -85,13 +129,8 @@
       /></a>
     </div>
     <!-- Sticky Socials ribbon end -->
-    <div class="root"></div>
-    <br />
-    <br />
-    <br />
-    <div style="padding-top: 10%"></div>
     <div class="section__aboutus">
-      <section id="About Us">
+      <section id="sectionAboutUs">
         <div class="container__aboutus-main">
           <div class="section__title">
             About Us
@@ -151,7 +190,7 @@
     <br /><br />
 
     <div class="section__hww">
-      <section id="How we work">
+      <section id="sectionHowWeWork">
         <div class="section__title__center">
           <div class="section__title">
             How we work
@@ -197,7 +236,7 @@
     </div>
 
     <div class="section__testimonials">
-      <section id="testimonial">
+      <section id="sectionTestimonial">
         <div class="section__title__center">
           <div class="section__title">
             What Travellers Are Saying
@@ -356,7 +395,7 @@
     </div>
 
     <div class="section__mailing">
-      <section id="Mailing List">
+      <section id="sectionMailing">
         <div>
           <div class="section__title__center">
             <div class="section__title">
@@ -382,7 +421,7 @@
     </div>
 
     <div class="section__contact">
-      <section id="Contact Us">
+      <section id="sectionContactUs">
         <div class="contact__main-container">
           <div class="contact__main-container__left">
             <div class="section__title">
@@ -490,5 +529,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./js/testimonial-animation.js"></script>
     <script src="./main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

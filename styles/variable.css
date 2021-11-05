@@ -1,3 +1,8 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 :root {
   /* -------------------- Colors -------------------- */
   --color-dark-blue: #2a3448;
@@ -129,9 +134,9 @@
   --testimonials-font-weight: 500;
 
   --navigation-font-family: DMSans;
-  --navigation-font-weight: bold;
+  --navigation-font-weight: 700;
   --navigation-font-style: normal;
-  --navigation-font-size: 18px;
+  --navigation-font-size: 16px;
   --navigation-line-height: 23px;
 }
 

@@ -109,7 +109,7 @@ body {
   background: var(--section-title-underline-color);
   border-radius: var(--section-title-underline-border-radius);
   margin-top: 8px;
-  background: wheat;
+  background: white;
 }
 /* Section Title CSS end */
 

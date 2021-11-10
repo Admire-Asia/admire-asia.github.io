@@ -138,6 +138,27 @@ html {
   --navigation-font-style: normal;
   --navigation-font-size: 16px;
   --navigation-line-height: 23px;
+
+  --booking-title-font-family: DMSans700;
+  --booking-title-font-style: normal;
+  --booking-title-font-weight: bold;
+  --booking-title-font-size: 1.8rem;
+  --booking-title-line-height: 2.7px;
+  --booking-title-color: var(--color-black);
+
+  --booking-description-font-family: DMSans;
+  --booking-description-font-style: normal;
+  --booking-description-font-weight: normal;
+  --booking-description-font-size: 1.8rem;
+  --booking-description-line-height: 2.3rem;
+  --booking-description-color: #666666;
+
+  --covid-hero-font-family: DMSans700;
+  --covid-hero-font-style: normal;
+  --covid-hero-font-weight: bold;
+  --covid-hero-font-size: 3.125vw;
+  --covid-hero-line-height: 4.6875vw;
+  --covid-hero-color: var(--color-white);
 }
 
 @font-face {

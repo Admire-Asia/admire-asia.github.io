@@ -25,7 +25,7 @@
 
 .hero__aunty {
   flex: 20%;
-  z-index: 2;
+  z-index: 250;
 }
 
 #carousel__main {
@@ -39,8 +39,8 @@
 }
 
 .hero__aunty-img {
-  width: 85%;
-  height: 75%;
+  width: 100%;
+  height: 100%;
   margin-left: 33%;
   margin-top: 20%;
 }
@@ -86,12 +86,12 @@
 
   .hero__aunty {
     flex: 20%;
-    z-index: 2;
+    z-index: 250;
   }
 
   .hero__aunty-img {
-    width: 85%;
-    height: 75%;
+    width: 100%;
+    height: 100%;
     margin-left: 33%;
     margin-top: 20%;
   }
@@ -117,12 +117,12 @@
 
   .hero__aunty {
     flex: 20%;
-    z-index: 2;
+    z-index: 250;
   }
 
   .hero__aunty-img {
-    width: 85%;
-    height: 75%;
+    width: 100%;
+    height: 100%;
     margin-left: 33%;
     margin-top: 20%;
   }
@@ -149,12 +149,12 @@
 
   .hero__aunty {
     flex: 20%;
-    z-index: 2;
+    z-index: 250;
   }
 
   .hero__aunty-img {
-    width: 85%;
-    height: 75%;
+    width: 100%;
+    height: 100%;
     margin-left: 33%;
     margin-top: 20%;
   }
@@ -181,7 +181,7 @@
 
   .hero__aunty {
     width: 75%;
-    z-index: 2;
+    z-index: 250;
   }
 
   .hero__aunty-img {

@@ -139,6 +139,21 @@ html {
   --navigation-font-size: 16px;
   --navigation-line-height: 23px;
 
+  --city-font-family: DMSans700;
+  --city-font-weight: bold;
+  --city-font-style: normal;
+  --city-font-size: 4.166666666666667vw;
+  --city-line-height: 5.403645833333333vw;
+  --city-text-transform: uppercase;
+  --city-text-color: var(--color-white);
+
+  --city-description-font-family: DMSans500;
+  --city-description-font-weight: 500;
+  --city-description-font-style: normal;
+  --city-description-font-size: 1.171875vw;
+  --city-description-line-height: 1.4973958333333333vw;
+  --city-description-text-color: var(--color-white);
+
   --booking-title-font-family: DMSans700;
   --booking-title-font-style: normal;
   --booking-title-font-weight: bold;

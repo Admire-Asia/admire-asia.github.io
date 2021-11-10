@@ -514,6 +514,44 @@
         </div>
       </section>
     </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="containersssssss">
+      <div id="progresssss">
+        <!-- <div id="myBar"></div> -->
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="contt">
+      <div id="doness"></div>
+    </div>
+
+    <button onclick="move()">Click ME</button>
+
     <footer>
       <div class="ribbon__main-footer">
         <a class="ribbon__main-text">
@@ -522,6 +560,78 @@
       </div>
     </footer>
 
+    <style>
+      .containersssssss {
+        position: relative;
+        background-color: red;
+        width: 80%;
+        margin: 0px 10%;
+        border: 1px solid black;
+      }
+
+      .contt {
+        position: relative;
+        width: 80%;
+        margin: 0px 10%;
+        border: 1px solid black;
+      }
+
+      #doness {
+        height: 8px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+        margin-top: -4px;
+        border-radius: 10px;
+        width: 10%;
+        transition: width 5s ease-in-out;
+      }
+
+      #progresssss {
+        height: 8px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+        margin-top: -4px;
+        border-radius: 10px;
+      }
+
+      #myProgress {
+        width: 100%;
+        background-color: #ddd;
+        height: 1px;
+      }
+
+      #myBar {
+        width: 20%;
+        height: 5px;
+        background-color: black;
+        border-radius: 20px;
+        z-index: 9;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function move() {
+        var elems = (document.getElementById("doness").style.width = "100%");
+        var elem = document.getElementById("progresssss");
+        var width = 0.5;
+        // change the milliseconds to 10 or 5 to fill it relatively faster
+        var id = setInterval(frame, 20);
+
+        function frame() {
+          if (width >= 100) {
+            clearInterval(id);
+            elem.style.width = "0%";
+          } else {
+            width += 0.5;
+            elem.style.width = width + "%";
+          }
+        }
+      }
+    </script>
     <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./js/testimonial-animation.js"></script>

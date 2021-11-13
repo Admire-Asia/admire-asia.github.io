@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <style>
     .xyz {
@@ -21,10 +26,37 @@
         rgba(64, 64, 64, 0.795) 100%
       );
     }
+
+    .containerss {
+      height: 8px;
+      background-color: black;
+      margin: 20% 10%;
+    }
+    .progresses {
+      width: 8%;
+      height: 4px;
+      background-color: red;
+      margin-top: 2px;
+    }
   </style>
   <body>
-    <div class="xyz">
-      <img src="http://lorempixel.com/200/200" class="xyz" />
+    <div class="containerss">
+      <div class="progresses" id="proges"></div>
     </div>
+    <br /><br />
+    <button class="abs" id="clickme">Button</button>
   </body>
+  <script>
+    $("#clickme").click(function () {
+      $("#proges").animate(
+        {
+          width: "100%",
+        },
+        5000,
+        function () {
+          // Animation complete.
+        }
+      );
+    });
+  </script>
 </html>

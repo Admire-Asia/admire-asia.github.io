@@ -39,7 +39,7 @@
   border: 0.5px solid white;
 }
 
-.progress_1,
+/* .progress_1,
 .progress_2,
 .progress_3,
 .progress_4 {
@@ -51,7 +51,17 @@
   background-color: white;
   margin-top: -4px;
   border-radius: 10px;
-  /* transition: width 6s ease-in-out; */
+} */
+
+.progresses {
+  width: 0%;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  margin-top: -4px;
+  border-radius: 10px;
 }
 
 .progress_1_inactive,
@@ -86,7 +96,6 @@
 .hero__carousel-text__city {
   margin-top: -30%;
   margin-left: 12%;
-  /* z-index: 200; */
   font-family: var(--city-font-family);
   font-style: var(--city-font-style);
   font-weight: var(--city-font-weight);
@@ -155,9 +164,6 @@
 }
 
 .hero__carousel-div {
-  background: url("../assets/images/hero/dubai.png");
-  background-size: contain;
-  background-repeat: no-repeat;
   z-index: 10;
 }
 

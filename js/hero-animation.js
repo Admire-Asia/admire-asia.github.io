@@ -1,23 +1,3 @@
-// function move() {
-//   var elem = document.getElementById("progresssss");
-//   var width = 0.5;
-//   console.log("I am here...")
-//   var seconds = 6;
-//   // change the milliseconds to 10 or 5 to fill it relatively faster
-//   var id = setInterval(frame, seconds * 1000 / 100);
-//   function frame() {
-//     var today = new Date();
-//     console.log(today.getSeconds());
-//     if (width >= 100) {
-//       clearInterval(id);
-//     } else {
-//       // console.log("Hellasndkjanskdja")
-//       width += 0.5;
-//       elem.style.width = width + '%';
-//     }
-//   }
-// }
-
 const FlexSlider = {
   num_items: document.querySelectorAll(".hero__carousel-div").length,
   current: 1,
@@ -52,24 +32,25 @@ const FlexSlider = {
     //       this.addEvents();
     // }, 6000)
     console.log(this.positioning);
-    $("#progress_" + this.positioning).animate(
+    $("#progress" + this.positioning).animate(
       {
         width: "100%",
       },
-      {
-        duration: 6000,
-        complete: function () {
-          console.log("here");
-          $(this).css("width", "0%");
-          this.gotoNext();
-          document
-            .querySelector("#carousel__main")
-            .addEventListener("transitionend", () => {
-              this.changeOrder();
-            });
-          this.changePosition();
-          this.addEvents();
-        },
+      5000,
+      function () {
+        console.log("Complete.");
+        FlexSlider.gotoNext();
+        document
+          .querySelector("#carousel__main")
+          .addEventListener("transitionend", () => {
+            that.changeOrder();
+          });
+        console.log("#progress" + that.positioning);
+        var ps = (document.querySelector(
+          "#progress" + that.positioning
+        ).style.width = "0%");
+        that.changePosition();
+        that.addEvents();
       }
     );
     // progresses.style.transition = "width 6s ease-in-out"

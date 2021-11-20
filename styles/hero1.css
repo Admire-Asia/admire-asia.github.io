@@ -273,7 +273,8 @@
 	}
 
 	.hero__carousel-text {
-		margin-top: -49%;
+		position: absolute;
+		margin-top: -60%;
 		margin-left: 4%;
 		width: 95%;
 	}
@@ -286,7 +287,7 @@
 	.hero__aunty-img {
 		width: 100%;
 		height: auto;
-		margin-top: -40%;
+		margin-top: -50%;
 		margin-left: 0;
 	}
 
@@ -322,7 +323,7 @@
 		position: relative;
 		width: 40%;
 		border: 0.5px solid white;
-		visibility: hidden;
+		margin-top: -32%;
 	}
 
 	.progress_1,

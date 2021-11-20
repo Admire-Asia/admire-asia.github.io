@@ -1,0 +1,219 @@
+.container__aboutus-main {
+	display: flex;
+	flex-direction: column;
+}
+
+.aboutus__feature {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 40px 15% 0 15%;
+}
+
+.aboutus__feature-img img {
+	width: 88px;
+	height: 88px;
+}
+
+.aboutus__content {
+	display: flex;
+	flex-direction: row;
+	margin-top: 38px;
+}
+
+.aboutus__content-container__left {
+	width: 35%;
+}
+
+.aboutus__content-container__right {
+	width: 65%;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.aboutus__content-description {
+	font-family: var(--aboutus-description-font-family);
+	font-style: var(--aboutus-description-font-style);
+	font-weight: var(--aboutus-description-font-weight);
+	font-size: var(--aboutus-description-font-size);
+	line-height: var(--aboutus-description-line-height);
+	color: var(--aboutus-description-text-color);
+}
+
+.aboutus__content-container__right-background {
+	position: relative;
+	width: 60%;
+	object-fit: contain;
+	float: right;
+	height: auto;
+}
+
+.aboutus__content-container__right-thumbnail {
+	background: url(../assets/images/aboutus/video_bg.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-x: left;
+	background-position-y: bottom;
+	z-index: 20;
+	width: 40%;
+}
+
+.aboutus__content-container__right-right__image {
+	width: 65%;
+}
+
+.aboutus__content-container__right-right__image img {
+	width: 100%;
+	vertical-align: top;
+	float: right;
+	cursor: hand;
+}
+
+.aboutus__content-container__right-left__image img {
+	width: 100%;
+	vertical-align: bottom;
+	margin-left: 50%;
+	margin-top: 75%;
+	float: left;
+	cursor: hand;
+}
+
+.aboutus__content-container__right-left__image {
+	width: 35%;
+	position: relative;
+}
+
+@-webkit-keyframes scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+@keyframes scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+.slider {
+	/* background: pr; */
+	/* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
+	height: 100px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 70%;
+}
+
+.slider::before,
+.slider::after {
+	/* background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
+	content: "";
+	height: 100px;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+}
+
+.slider::after {
+	right: 0;
+	top: 0;
+	-webkit-transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+}
+
+.slider::before {
+	left: 0;
+	top: 0;
+}
+
+.slider .slide-track {
+	-webkit-animation: scroll 40s linear infinite;
+	animation: scroll 40s linear infinite;
+	display: flex;
+	width: calc(250px * 18);
+}
+
+.slider .slide {
+	height: 100px;
+	width: 100px;
+	margin: 0 8px 0;
+}
+
+@media all and (max-width: 480px) {
+	.aboutus__feature {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.aboutus__feature-img {
+		flex: 1 1 30%;
+		width: 33%;
+	}
+
+	.aboutus__feature-img img {
+		width: 88px;
+		height: 88px;
+	}
+	.slider {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 992px) {
+	.aboutus__content {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 38px;
+	}
+
+	.aboutus__content-container__left {
+		width: 100%;
+	}
+
+	.aboutus__content-container__right {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.aboutus__content-container__right-right__image {
+		width: 100%;
+		padding-left: 20%;
+	}
+
+	.aboutus__content-container__right-right__image img {
+		width: 100%;
+		vertical-align: top;
+		float: right;
+		cursor: hand;
+	}
+
+	.aboutus__content-container__right-left__image {
+		width: 45%;
+		margin-top: -15%;
+	}
+
+	.aboutus__content-container__right-left__image img {
+		width: 100%;
+		vertical-align: bottom;
+		margin-left: 0%;
+		margin-top: 0%;
+		float: left;
+		cursor: hand;
+	}
+}

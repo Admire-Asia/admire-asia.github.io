@@ -1,0 +1,219 @@
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+:root {
+	/* -------------------- Colors -------------------- */
+	--color-dark-blue: #2a3448;
+	--color-off-white: #f2f2f2;
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-slight-black: rgba(75, 76, 94, 0.08);
+	--color-purple: #5d58f7;
+	--color-grey: #666666;
+
+	/* -------------------- Themes -------------------- */
+	--color-background: var(--color-white);
+	--color-copyright-ribbon: var(--color-dark-blue);
+	--color-copyright-ribbon-text: var(--color-white);
+	--color-social-ribbon: var(--color-white);
+	--color-social-ribbon-shadow: var(--color-slight-black);
+	--color-contact-input-border: var(--color-grey);
+	--color-contact-input-background: var(--color-white);
+	--color-contact-button-background: #ff6536;
+	--color-contact-address-description-color: #666666;
+	--color-mailing-input-background: #f5f5f5;
+	--color-hww-title: #ff6536;
+	--color-hww-description: #666666;
+	--color-button-active: #fc4c17;
+
+	/* -------------------- Dimens -------------------- */
+	--copyright-padding: 12px;
+	--copyright-font-size: 14px;
+	--copyright-font-weight: bold;
+	--copyright-line-height: 29px;
+	--copyright-font-style: normal;
+
+	--social-ribbon-padding: 8px;
+	--social-ribbon-border-radius: 8px;
+	--social-ribbon-box-shadow: 0px 7px 35px var(--color-social-ribbon-shadow);
+
+	--section-title-font-style: normal;
+	--section-title-font-weight: bold;
+	--section-title-font-size: 24px;
+	--section-title-line-height: 150%;
+	--section-title-color: var(--color-black);
+	--section-title-underline-color: var(--color-purple);
+	--section-title-underline-border-radius: 8px;
+	--section-title-font-family: DMSans700;
+
+	--subsection-title-font-style: normal;
+	--subsection-title-font-weight: bold;
+	--subsection-title-font-size: 18px;
+	--subsection-title-line-height: 14px;
+	--subsection-title-color: var(--color-black);
+	--subsection-title-underline-color: var(--color-purple);
+	--subsection-title-underline-border-radius: 8px;
+	--subsection-title-font-family: DMSans700;
+
+	--contact-input-border-radius: 8px;
+	--contact-input-box-sizing: border-box;
+	--contact-input-border: 1px solid var(--color-contact-input-border);
+	--contact-input-background: var(--color-contact-input-background);
+	--contact-input-padding: 16px;
+	--contact-input-font-family: DMSans;
+	--contact-input-font-style: normal;
+	--contact-input-font-weight: normal;
+	--contact-input-font-size: 18px;
+	--contact-input-line-height: 150%;
+
+	--mailing-input-border-radius: 8px;
+	--mailing-input-box-sizing: border-box;
+	--mailing-input-background: var(--color-mailing-input-background);
+	--mailing-input-padding: 16px;
+	--mailing-input-font-family: DMSans;
+	--mailing-input-font-style: normal;
+	--mailing-input-font-weight: normal;
+	--mailing-input-font-size: 18px;
+	--mailing-input-line-height: 150%;
+
+	--contact-button-background: var(--color-contact-button-background);
+	--contact-button-active-background: var(--color-button-active);
+	--contact-button-radius: 8px;
+	--contact-button-font-family: DMSans700;
+	--contact-button-font-style: normal;
+	--contact-button-font-weight: normal;
+	--contact-button-font-color: var(--color-white);
+	--contact-button-font-size: 20px;
+	--contact-button-line-height: 20px;
+
+	--contact-address-heading-font-family: DMSans;
+	--contact-address-heading-font-style: normal;
+	--contact-address-heading-font-weight: bold;
+	--contact-address-heading-font-size: 18px;
+	--contact-address-heading-line-height: 150%;
+	--contact-address-heading-text-color: var(--color-black);
+
+	--contact-address-description-font-family: DMSans;
+	--contact-address-description-font-style: normal;
+	--contact-address-description-font-weight: normal;
+	--contact-address-description-font-size: 18px;
+	--contact-address-description-line-height: 150%;
+	--contact-address-description-text-color: var(
+		--color-contact-address-description-color
+	);
+
+	--aboutus-description-font-family: DMSans;
+	--aboutus-description-font-style: normal;
+	--aboutus-description-font-weight: normal;
+	--aboutus-description-font-size: 18px;
+	--aboutus-description-line-height: 23px;
+	--aboutus-description-text-color: var(--color-grey);
+
+	--subheading-font-family: DMSans500;
+	--subheading-font-style: normal;
+	--subheading-font-weight: 500;
+	--subheading-font-size: 20px;
+	--subheading-line-height: 43px;
+
+	--hww-title-font-family: DMSans700;
+	--hww-title-font-style: normal;
+	--hww-title-font-weight: bold;
+	--hww-title-font-size: 18px;
+	--hww-title-line-height: 20px;
+	--hww-title-text-color: var(--color-hww-title);
+
+	--hww-description-font-family: DMSans;
+	--hww-description-font-style: normal;
+	--hww-description-font-weight: normal;
+	--hww-description-font-size: 14px;
+	--hww-description-line-height: 15px;
+	--hww-description-text-color: var(--color-hww-description);
+
+	--testimonials-font-family: DMSans500;
+	--testimonials-font-style: bold;
+	--testimonials-font-weight: 500;
+
+	--navigation-font-family: DMSans;
+	--navigation-font-weight: 700;
+	--navigation-font-style: normal;
+	--navigation-font-size: 16px;
+	--navigation-line-height: 23px;
+
+	--city-font-family: DMSans700;
+	--city-font-weight: bold;
+	--city-font-style: normal;
+	--city-font-size: 4.166666666666667vw;
+	--city-line-height: 5.403645833333333vw;
+	--city-text-transform: uppercase;
+	--city-text-color: var(--color-white);
+
+	--city-description-font-family: DMSans500;
+	--city-description-font-weight: 500;
+	--city-description-font-style: normal;
+	--city-description-font-size: 1.171875vw;
+	--city-description-line-height: 1.4973958333333333vw;
+	--city-description-text-color: var(--color-white);
+
+	--booking-title-font-family: DMSans700;
+	--booking-title-font-style: normal;
+	--booking-title-font-weight: bold;
+	--booking-title-font-size: 1.8rem;
+	--booking-title-line-height: 2.7px;
+	--booking-title-color: var(--color-black);
+
+	--booking-description-font-family: DMSans;
+	--booking-description-font-style: normal;
+	--booking-description-font-weight: normal;
+	--booking-description-font-size: 1.8rem;
+	--booking-description-line-height: 2.3rem;
+	--booking-description-color: #666666;
+
+	--covid-hero-font-family: DMSans700;
+	--covid-hero-font-style: normal;
+	--covid-hero-font-weight: bold;
+	--covid-hero-font-size: 3.125vw;
+	--covid-hero-line-height: 4.6875vw;
+	--covid-hero-color: var(--color-white);
+
+	--footer-tands-font-family: DMSans;
+	--footer-tands-font-size: 14px;
+	--footer-tands-font-style: normal;
+	--footer-tands-font-weight: normal;
+	--footer-tands-line-height: 18px;
+
+	--country-title-font-family: Damion;
+	--country-title-font-weight: normal;
+	--country-title-font-style: normal;
+	--country-title-font-size: 4.444444444444445vw;
+	--country-title-line-height: 6.666666666666667vw;
+	--country-title-color: var(--color-white);
+
+	--country-tags-font-family: DMSans500;
+	--country-tags-font-weight: 500;
+	--country-tags-font-style: normal;
+	--country-tags-font-size: 0.9722222222222222vw;
+	--country-tags-line-height: 1.25vw;
+	--country-tags-color: var(--color-white);
+}
+
+@font-face {
+	font-family: DMSans;
+	src: url(../assets/fonts/dmsans-regular.ttf);
+}
+
+@font-face {
+	font-family: DMSans700;
+	src: url(../assets/fonts/dmsans_bold_700.ttf);
+}
+
+@font-face {
+	font-family: DMSans500;
+	src: url(../assets/fonts/dmsans_medium_500.ttf);
+}
+
+@font-face {
+	font-family: Damion;
+	src: url(../assets/fonts/damion_regular.ttf);
+}

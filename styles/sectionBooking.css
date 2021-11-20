@@ -1,0 +1,92 @@
+.booking__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.booking__main-item {
+  margin: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking__main-item__img {
+  width: 100%;
+  height: 28.8rem;
+}
+
+.booking__main-item__title {
+  font-family: var(--booking-title-font-family);
+  font-style: var(--booking-title-font-style);
+  font-weight: var(--booking-title-font-weight);
+  font-size: var(--booking-title-font-size);
+  line-height: var(--booking-title-line-height);
+  color: var(--booking-title-color);
+  margin-top: 2rem;
+}
+
+.booking__main-item__description {
+  font-family: var(--booking-description-font-family);
+  font-style: var(--booking-description-font-style);
+  font-weight: var(--booking-description-font-weight);
+  font-size: var(--booking-description-font-size);
+  line-height: var(--booking-description-line-height);
+  color: var(--booking-description-color);
+  font-weight: lighter !important;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.section__booking {
+  margin-top: 3.2rem;
+}
+
+@media all and (max-width: 1130px) {
+  .booking__main-item__title {
+    font-family: var(--booking-title-font-family);
+    font-style: var(--booking-title-font-style);
+    font-weight: var(--booking-title-font-weight);
+    font-size: 1.6rem;
+    line-height: var(--booking-title-line-height);
+    color: var(--booking-title-color);
+    margin-top: 2rem;
+  }
+
+  .booking__main-item__description {
+    font-family: var(--booking-description-font-family);
+    font-style: var(--booking-description-font-style);
+    font-weight: var(--booking-description-font-weight);
+    font-size: 1.6rem;
+    line-height: var(--booking-description-line-height);
+    color: var(--booking-description-color);
+    font-weight: lighter !important;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+@media all and (max-width: 1040px) {
+  .booking__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .booking__main-item {
+    /* margin: 1.6rem; */
+    margin: 0rem;
+    margin-top: 1.6rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .booking__main-item__img {
+    width: 100%;
+    height: auto;
+  }
+}

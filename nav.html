@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/variable.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./her.css" />
+    <script src="./js/navigation.js" defer></script>
+  </head>
+  <body>
+    <div class="navigation__container">
+      <header class="primary-header flex">
+        <div>
+          <img
+            src="./assets/images/admire_asia_logo.png"
+            alt="space tourism logo"
+            class="logo"
+          />
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+          <span class="sr-only" aria-expanded="false">Menu</span>
+        </button>
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation underline-indicators flex"
+          >
+            <li class="main-list-class">
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="index.html"
+                ><span aria-hidden="true"></span>Home</a
+              >
+            </li>
+
+            <li class="main-list-class">
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="destination.html"
+                ><span aria-hidden="true"></span>Destination</a
+              >
+            </li>
+
+            <li class="main-list-class">
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="crew.html"
+                ><span aria-hidden="true"></span>Crew</a
+              >
+            </li>
+
+            <li class="main-list-class">
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="technology.html"
+                ><span aria-hidden="true"></span>Technology</a
+              >
+            </li>
+
+            <ul data-visible="true" class="tc-list-main">
+              <li class="tc-list">
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="technology.html"
+                  ><span aria-hidden="true"></span>Cookie policy</a
+                >
+              </li>
+              <li class="tc-list">
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="technology.html"
+                  ><span aria-hidden="true"></span>Copyright complaints</a
+                >
+              </li>
+              <li class="tc-list">
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="technology.html"
+                  ><span aria-hidden="true"></span>Privacy policy</a
+                >
+              </li>
+              <li class="tc-list">
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="technology.html"
+                  ><span aria-hidden="true"></span>Terms and conditions</a
+                >
+              </li>
+            </ul>
+
+            <div class="nav-socials-main">
+              <a href="#">
+                <img
+                  width="20"
+                  height="20"
+                  title=""
+                  alt=""
+                  onmouseover="this.src='./assets/images/socials/ic_instagram_orange.svg'"
+                  onmouseout="this.src='./assets/images/socials/ic_instagram.svg'"
+                  src="./assets/images/socials/ic_instagram.svg"
+              /></a>
+              <a href="#"
+                ><img
+                  width="20"
+                  height="20"
+                  title=""
+                  alt=""
+                  onmouseover="this.src='./assets/images/socials/ic_facebook_orange.svg'"
+                  onmouseout="this.src='./assets/images/socials/ic_facebook.svg'"
+                  src="./assets/images/socials/ic_facebook.svg"
+              /></a>
+              <a href="#"
+                ><img
+                  width="20"
+                  height="20"
+                  title=""
+                  alt=""
+                  onmouseover="this.src='./assets/images/socials/ic_twitter_orange.svg'"
+                  onmouseout="this.src='./assets/images/socials/ic_twitter.svg'"
+                  src="./assets/images/socials/ic_twitter.svg"
+              /></a>
+            </div>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+.primary-header {
+  justify-content: space-between;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.logo {
+  margin: 0 clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.tc-list-main {
+  display: none;
+}
+
+.nav-socials-main {
+  display: none;
+}
+
+.primary-navigation {
+  --gap: clamp(1.5rem, 5vw, 3.5rem);
+  --underline-gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: hsl(var(--clr-white) / 0.05);
+  border: 2px solid black;
+  font-size: 1.8rem;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a > span {
+  font-weight: 700;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (min-width: 35em) {
+  .primary-navigation {
+    padding-inline: clamp(3rem, 7vw, 7rem);
+  }
+}
+
+@media (max-width: 35rem) {
+  .tc-list-main {
+    display: block;
+  }
+  .logo {
+    margin: 0 clamp(1rem, 0vw, 3.5rem);
+  }
+
+  li.main-list-class {
+    border-bottom: 0.1rem solid black;
+    padding: 0.8rem 0rem;
+  }
+
+  li.main-list-class > a {
+    font-family: DMSans700;
+    color: #666666;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  .tc-list {
+    padding: 0.8rem 0rem;
+  }
+
+  li.tc-list > a {
+    font-family: DMSans;
+    color: #666666;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .nav-socials-main {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 32px;
+  }
+
+  .tc-list-main {
+    list-style: none;
+    padding-inline-start: 0px;
+    position: absolute;
+    bottom: 10rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  .primary-navigation {
+    --underline-gap: 0.5rem;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    list-style: none;
+    padding: min(20rem, 15vh) 2rem;
+    margin: 0;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+    background-color: white;
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0);
+  }
+
+  .primary-navigation.underline-indicators > .active {
+    border: 0;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    right: 1rem;
+    background: transparent;
+    background-image: url(./assets/images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 3.5rem;
+    aspect-ratio: 1;
+    border: 0;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url(./assets/images/icon-close.svg);
+  }
+
+  .mobile-nav-toggle:focus-visible {
+    outline: 5px solid white;
+    outline-offset: 5px;
+  }
+}
+
+@media (min-width: 35em) and (max-width: 44.999em) {
+  .primary-navigation a > span {
+    display: none;
+  }
+}
+
+@media (min-width: 45em) {
+  .primary-header::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin-right: -2.5rem;
+    background: hsl(var(--clr-white) / 0.25);
+    order: 1;
+  }
+
+  .copiee {
+    position: absolute;
+    bottom: 0;
+  }
+
+  nav {
+    order: 2;
+    z-index: 200;
+  }
+  .underline-indicators > * {
+    cursor: pointer;
+    padding: var(--underline-gap, 0.5rem) 0;
+    border: 0;
+    border-bottom: 0.2rem solid hsl(var(--clr-white) / 0);
+    background-color: transparent;
+  }
+
+  .underline-indicators > *:hover,
+  .underline-indicators > *:focus {
+    border-color: hsl(var(--clr-white) / 0.5);
+  }
+
+  .underline-indicators > .active,
+  .underline-indicators > [aria-selected="true"] {
+    color: hsl(var(--clr-white) / 1);
+    border-color: hsl(var(--clr-white) / 1);
+  }
+}

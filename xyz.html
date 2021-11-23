@@ -1,191 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./styles/magicscroll.css">
-  <script src="./js/magicscroll.js"></script>
-</head>
-<style>
-  body {
-    box-sizing: border-box;
-    margin: 0;
-  }
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="./styles/variable.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/hero1.css" />
+    <link rel="stylesheet" href="./styles/navbar2.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+    <script src="./js/navigation.js" defer></script>
+  </head>
 
-  @-webkit-keyframes scroll {
-    0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
+  <body>
+    <div class="navigation__container">
+      <header class="primary-header flex">
+        <div>
+          <img
+            src="./assets/images/admire_asia_logo.png"
+            alt="space tourism logo"
+            class="logo"
+          />
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+          <span class="sr-only" aria-expanded="false">Menu</span>
+        </button>
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation underline-indicators flex"
+          >
+            <li class="main-list-class">
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="index.html"
+                ><span aria-hidden="true"></span>Home</a
+              >
+            </li>
 
-    100% {
-      -webkit-transform: translateX(calc(-250px * 7));
-      transform: translateX(calc(-250px * 7));
-    }
-  }
+            <li class="main-list-class">
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="destination.html"
+                ><span aria-hidden="true"></span>Destination</a
+              >
+            </li>
 
-  @keyframes scroll {
-    0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
+            <li class="main-list-class">
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="crew.html"
+                ><span aria-hidden="true"></span>Crew</a
+              >
+            </li>
 
-    100% {
-      -webkit-transform: translateX(calc(-250px * 7));
-      transform: translateX(calc(-250px * 7));
-    }
-  }
+            <li class="main-list-class">
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="technology.html"
+                ><span aria-hidden="true"></span>Technology</a
+              >
+            </li>
 
-  .slider {
-    /* background: pr; */
-    /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
-    height: 100px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: 95%;
-  }
+            <ul data-visible="true" class="tc-list-main">
+              <li class="tc-list">
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="technology.html"
+                  ><span aria-hidden="true"></span>Cookie policy</a
+                >
+              </li>
+              <li class="tc-list">
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="technology.html"
+                  ><span aria-hidden="true"></span>Copyright complaints</a
+                >
+              </li>
+              <li class="tc-list">
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="technology.html"
+                  ><span aria-hidden="true"></span>Privacy policy</a
+                >
+              </li>
+              <li class="tc-list">
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="technology.html"
+                  ><span aria-hidden="true"></span>Terms and conditions</a
+                >
+              </li>
+            </ul>
 
-  .slider::before,
-  .slider::after {
-    /* background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
-    content: "";
-    height: 100px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-  }
+            <div class="nav-socials-main">
+              <a href="#">
+                <img
+                  width="20"
+                  height="20"
+                  title=""
+                  alt=""
+                  onmouseover="this.src='./assets/images/socials/ic_instagram_orange.svg'"
+                  onmouseout="this.src='./assets/images/socials/ic_instagram.svg'"
+                  src="./assets/images/socials/ic_instagram.svg"
+              /></a>
+              <a href="#"
+                ><img
+                  width="20"
+                  height="20"
+                  title=""
+                  alt=""
+                  onmouseover="this.src='./assets/images/socials/ic_facebook_orange.svg'"
+                  onmouseout="this.src='./assets/images/socials/ic_facebook.svg'"
+                  src="./assets/images/socials/ic_facebook.svg"
+              /></a>
+              <a href="#"
+                ><img
+                  width="20"
+                  height="20"
+                  title=""
+                  alt=""
+                  onmouseover="this.src='./assets/images/socials/ic_twitter_orange.svg'"
+                  onmouseout="this.src='./assets/images/socials/ic_twitter.svg'"
+                  src="./assets/images/socials/ic_twitter.svg"
+              /></a>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <div class="hero__main">
+        <div class="hero__carousel">
+          <div id="carousel__main" class="carousel__main-transition">
+            <!-- <div class="hero__carousel-div">
 
-  .slider::after {
-    right: 0;
-    top: 0;
-    -webkit-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
-  }
+        </div> -->
+            <!-- <div class="hero__carousel-img" data-position="1">
+            <img src="./assets/images/hero/dubai.png" />
+          </div>
 
-  .slider::before {
-    left: 0;
-    top: 0;
-  }
+          <div class="hero__carousel-img" data-position="2">
+            <img src="./assets/images/hero/dubai.png" />
+          </div>
 
-  .slider .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
-    animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(250px * 18);
-  }
+          <div class="hero__carousel-img" data-position="3">
+            <img src="./assets/images/hero/dubai.png" />
+          </div>
 
-  .slider .slide {
-    height: 100px;
-    width: 100px;
-    margin: 0 8px 0;
-  }
+          <div class="hero__carousel-img" data-position="4">
+            <img src="./assets/images/hero/dubai.png" />
+          </div> -->
+            <div class="hero__carousel-div" data-position="1">
+              <img
+                class="hero__carousel-img"
+                src="./assets/images/hero/dubai.png"
+              />
 
-  @media all and (max-width: 480px) {
-    .slider {
-      width: 95%;
-    }
-  }
-</style>
+              <div class="hero__carousel-text__city">Dubai</div>
+              <div class="hero__carousel-text__city-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                sed lacinia leo, et volutpat magna. Integer eu viverra dolor, ut
+                tincidunt augue. Ut feugiat sem
+              </div>
+              <div class="containersssssss">
+                <div class="progress_1"></div>
+              </div>
+            </div>
 
-<body>
-  <div class="slider">
-    <div class="slide-track">
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/aboutus/ic_around_the_world.png" height="100" width="100" alt="" />
+            <div class="hero__carousel-div" data-position="2">
+              <img
+                class="hero__carousel-img"
+                src="./assets/images/hero/dubai.png"
+              />
+              <!-- <div class="hero__carousel-text__city">Dubai</div>
+              <div class="hero__carousel-text__city-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                sed lacinia leo, et volutpat magna. Integer eu viverra dolor, ut
+                tincidunt augue. Ut feugiat sem
+              </div>
+              <div class="containersssssss">
+                <div class="progress_2">
+                </div>
+              </div> -->
+            </div>
+
+            <div class="hero__carousel-div" data-position="3">
+              <img
+                class="hero__carousel-img"
+                src="./assets/images/hero/dubai.png"
+              />
+
+              <!-- <div class="hero__carousel-text__city">Dubai</div>
+              <div class="hero__carousel-text__city-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                sed lacinia leo, et volutpat magna. Integer eu viverra dolor, ut
+                tincidunt augue. Ut feugiat sem
+              </div>
+              <div class="containersssssss">
+                <div class="progress_3">
+                </div>
+              </div> -->
+            </div>
+
+            <div class="hero__carousel-div" data-position="4">
+              <img
+                class="hero__carousel-img"
+                src="./assets/images/hero/dubai.png"
+              />
+              <!-- <div class="hero__carousel-text__city">Dubai</div>
+              <div class="hero__carousel-text__city-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                sed lacinia leo, et volutpat magna. Integer eu viverra dolor, ut
+                tincidunt augue. Ut feugiat sem
+              </div>
+              <div class="containersssssss">
+                <div class="progress_4">
+                </div>
+              </div> -->
+            </div>
+
+            <!-- <img class="hero__carousel-img" data-position="1" src="./assets/images/hero/dubai.png" />
+
+          <img class="hero__carousel-img" data-position="2" src="./assets/images/hero/dubai.png" />
+
+          <img class="hero__carousel-img" data-position="3" src="./assets/images/hero/dubai.png" />
+
+          <img class="hero__carousel-img" data-position="4" src="./assets/images/hero/dubai.png" /> -->
+          </div>
+        </div>
+        <div class="hero__aunty">
+          <!-- <img
+            class="hero__aunty-img"
+            src="./assets/images/hero/girl_img.png"
+          /> -->
+          <lottie-player
+            src="https://assets6.lottiefiles.com/packages/lf20_h9ummwur.json"
+            class="hero__aunty-img"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-<script>
-  $("#clickme").click(function () {
-    $("#proges").animate(
-      {
-        width: "100%",
-      },
-      5000,
-      function () {
-        // Animation complete.
-      }
-    );
-  });
-</script>
-
+  </body>
 </html>

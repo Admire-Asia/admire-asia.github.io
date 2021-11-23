@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="./nav.css" />
     <link rel="stylesheet" href="./her.css" />
     <script src="./js/navigation.js" defer></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
     <div class="navigation__container">
       <header class="primary-header flex">
         <div>
-          <img
-            src="./assets/images/admire_asia_logo.png"
-            alt="space tourism logo"
-            class="logo"
-          />
+          <a href="/index.html">
+            <img
+              src="./assets/images/admire_asia_logo.png"
+              alt="Admire Asia"
+              class="logo"
+            />
+          </a>
         </div>
         <button class="mobile-nav-toggle" aria-controls="primary-navigation">
           <span class="sr-only" aria-expanded="false">Menu</span>
@@ -34,7 +37,7 @@
               <a
                 class="ff-sans-cond uppercase text-white letter-spacing-2"
                 href="index.html"
-                ><span aria-hidden="true"></span>Home</a
+                ><span aria-hidden="true"></span>Plan Trip</a
               >
             </li>
 
@@ -42,7 +45,7 @@
               <a
                 class="ff-sans-cond uppercase text-white letter-spacing-2"
                 href="destination.html"
-                ><span aria-hidden="true"></span>Destination</a
+                ><span aria-hidden="true"></span>About Us</a
               >
             </li>
 
@@ -50,7 +53,7 @@
               <a
                 class="ff-sans-cond uppercase text-white letter-spacing-2"
                 href="crew.html"
-                ><span aria-hidden="true"></span>Crew</a
+                ><span aria-hidden="true"></span>How We Work</a
               >
             </li>
 
@@ -58,7 +61,7 @@
               <a
                 class="ff-sans-cond uppercase text-white letter-spacing-2"
                 href="technology.html"
-                ><span aria-hidden="true"></span>Technology</a
+                ><span aria-hidden="true"></span>Contact Us</a
               >
             </li>
 
@@ -66,28 +69,28 @@
               <li class="tc-list">
                 <a
                   class="ff-sans-cond uppercase text-white letter-spacing-2"
-                  href="technology.html"
+                  href="facebook.com"
                   ><span aria-hidden="true"></span>Cookie policy</a
                 >
               </li>
               <li class="tc-list">
                 <a
                   class="ff-sans-cond uppercase text-white letter-spacing-2"
-                  href="technology.html"
+                  href="youtube.com"
                   ><span aria-hidden="true"></span>Copyright complaints</a
                 >
               </li>
               <li class="tc-list">
                 <a
                   class="ff-sans-cond uppercase text-white letter-spacing-2"
-                  href="technology.html"
+                  href="instagram.com"
                   ><span aria-hidden="true"></span>Privacy policy</a
                 >
               </li>
               <li class="tc-list">
                 <a
                   class="ff-sans-cond uppercase text-white letter-spacing-2"
-                  href="technology.html"
+                  href="google.com"
                   ><span aria-hidden="true"></span>Terms and conditions</a
                 >
               </li>
@@ -128,6 +131,126 @@
           </ul>
         </nav>
       </header>
+      <div class="hero__main">
+        <div class="hero__carousel">
+          <div id="carousel__main" class="carousel__main-transition">
+            <!-- <div class="hero__carousel-div">
+
+        </div> -->
+            <!-- <div class="hero__carousel-img" data-position="1">
+            <img src="./assets/images/hero/dubai.png" />
+          </div>
+
+          <div class="hero__carousel-img" data-position="2">
+            <img src="./assets/images/hero/dubai.png" />
+          </div>
+
+          <div class="hero__carousel-img" data-position="3">
+            <img src="./assets/images/hero/dubai.png" />
+          </div>
+
+          <div class="hero__carousel-img" data-position="4">
+            <img src="./assets/images/hero/dubai.png" />
+          </div> -->
+            <div class="hero__carousel-div" data-position="1">
+              <img
+                class="hero__carousel-img"
+                src="./assets/images/hero/dubai.png"
+              />
+
+              <div class="hero__carousel-text">
+                <div>
+                  <div class="hero__carousel-text__city">Dubai</div>
+                  <div class="hero__carousel-text__city-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras sed lacinia leo, et volutpat magna. Integer eu viverra
+                    dolor, ut tincidunt augue. Ut feugiat sem
+                  </div>
+                </div>
+                <div class="containersssssss"></div>
+              </div>
+            </div>
+
+            <div class="hero__carousel-div" data-position="2">
+              <img
+                class="hero__carousel-img"
+                src="./assets/images/hero/dubai.png"
+              />
+
+              <div class="hero__carousel-text">
+                <div>
+                  <div class="hero__carousel-text__city">Dubai</div>
+                  <div class="hero__carousel-text__city-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras sed lacinia leo, et volutpat magna. Integer eu viverra
+                    dolor, ut tincidunt augue. Ut feugiat sem
+                  </div>
+                </div>
+                <div class="containersssssss"></div>
+              </div>
+            </div>
+
+            <div class="hero__carousel-div" data-position="3">
+              <img
+                class="hero__carousel-img"
+                src="./assets/images/hero/dubai.png"
+              />
+
+              <div class="hero__carousel-text">
+                <div>
+                  <div class="hero__carousel-text__city">Dubai</div>
+                  <div class="hero__carousel-text__city-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras sed lacinia leo, et volutpat magna. Integer eu viverra
+                    dolor, ut tincidunt augue. Ut feugiat sem
+                  </div>
+                </div>
+                <div class="containersssssss"></div>
+              </div>
+            </div>
+
+            <div class="hero__carousel-div" data-position="4">
+              <img
+                class="hero__carousel-img"
+                src="./assets/images/hero/dubai.png"
+              />
+
+              <div class="hero__carousel-text">
+                <div>
+                  <div class="hero__carousel-text__city">Dubai</div>
+                  <div class="hero__carousel-text__city-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras sed lacinia leo, et volutpat magna. Integer eu viverra
+                    dolor, ut tincidunt augue. Ut feugiat sem
+                  </div>
+                </div>
+                <div class="containersssssss"></div>
+              </div>
+            </div>
+
+            <!-- <img class="hero__carousel-img" data-position="1" src="./assets/images/hero/dubai.png" />
+
+          <img class="hero__carousel-img" data-position="2" src="./assets/images/hero/dubai.png" />
+
+          <img class="hero__carousel-img" data-position="3" src="./assets/images/hero/dubai.png" />
+
+          <img class="hero__carousel-img" data-position="4" src="./assets/images/hero/dubai.png" /> -->
+          </div>
+        </div>
+        <div class="hero__aunty">
+          <!-- <img
+            class="hero__aunty-img"
+            src="./assets/images/hero/girl_img.png"
+          /> -->
+          <lottie-player
+            src="https://assets6.lottiefiles.com/packages/lf20_h9ummwur.json"
+            class="hero__aunty-img"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admire Asia</title>
     <link rel="stylesheet" href="./styles/variable.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/sectionContact.css" />
@@ -12,76 +13,247 @@
     <link rel="stylesheet" href="./styles/sectionAboutus.css" />
     <link rel="stylesheet" href="./styles/sectionHww.css" />
     <link rel="stylesheet" href="./styles/sectionTestimonials.css" />
-    <link rel="stylesheet" href="./styles/navbar2.css" />
-    <link rel="stylesheet" href="./styles/hero1.css" />
-    <link rel="stylesheet" href="./styles/animation.css" />
+    <!-- <link rel="stylesheet" href="./styles/navbar2.css" />
+    <link rel="stylesheet" href="./styles/hero1.css" /> -->
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./her.css" />
+    <script src="./js/navigation.js" defer></script>
+    <link type="text/css" rel="stylesheet" href="./styles/magicscroll.css" />
+    <script type="text/javascript" src="./js/magicscroll.js"></script>
+
+    <!-- <link rel="stylesheet" href="./styles/animation.css" /> -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <title>Admire Asia</title>
   </head>
 
   <body>
     <div class="ribbon__main">
-      <a class="ribbon__main-text" href="www.google.com">
+      <a class="ribbon__main-text" href="./covid-restrictions.html">
         Ready to travel again? <u>Read Travel Guidelines</u>
       </a>
     </div>
 
     <div class="navigation__container">
-      <nav class="navbar">
-        <div class="nav-logo">
-          <a href="#"
-            ><img src="./assets/images/admire_asia_logo.png" alt="Admire Asia"
-          /></a>
+      <header class="primary-header flex">
+        <div>
+          <a href="/index.html">
+            <img
+              src="./assets/images/admire_asia_logo.png"
+              alt="Admire Asia"
+              class="logo"
+            />
+          </a>
         </div>
-        <ul class="nav-list" id="naviList">
-          <li class="list-item">
-            <a href="#" class="menu-list-text">Plan Trip</a>
-          </li>
-          <li class="list-item">
-            <a href="#sectionAboutUs" class="menu-list-text">About Us</a>
-          </li>
-          <li class="list-item">
-            <a href="#sectionHowWeWork" class="menu-list-text">How We Work</a>
-          </li>
-          <li class="list-item">
-            <a href="#sectionContactUs" class="menu-list-text">Contact Us</a>
-          </li>
-        </ul>
-        <div class="menu" id="toggleButton">
-          <div class="menu-line"></div>
-          <div class="menu-line"></div>
-          <div class="menu-line no-bottom"></div>
-        </div>
-      </nav>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+          <span class="sr-only" aria-expanded="false">Menu</span>
+        </button>
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation underline-indicators flex"
+          >
+            <li class="main-list-class">
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="#"
+                ><span aria-hidden="true"></span>Plan Trip</a
+              >
+            </li>
 
+            <li class="main-list-class">
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="#sectionAboutUs"
+                ><span aria-hidden="true"></span>About Us</a
+              >
+            </li>
+
+            <li class="main-list-class">
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="#sectionHowWeWork"
+                ><span aria-hidden="true"></span>How We Work</a
+              >
+            </li>
+
+            <li class="main-list-class">
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="#sectionContactUs"
+                ><span aria-hidden="true"></span>Contact Us</a
+              >
+            </li>
+
+            <ul data-visible="true" class="tc-list-main">
+              <li class="tc-list">
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="facebook.com"
+                  ><span aria-hidden="true"></span>Cookie policy</a
+                >
+              </li>
+              <li class="tc-list">
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="youtube.com"
+                  ><span aria-hidden="true"></span>Copyright complaints</a
+                >
+              </li>
+              <li class="tc-list">
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="instagram.com"
+                  ><span aria-hidden="true"></span>Privacy policy</a
+                >
+              </li>
+              <li class="tc-list">
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="google.com"
+                  ><span aria-hidden="true"></span>Terms and conditions</a
+                >
+              </li>
+            </ul>
+
+            <div class="nav-socials-main">
+              <a class="socialsClass"  href="#">
+                <img
+                  width="20"
+                  height="20"
+                  title=""
+                  alt=""
+                  onmouseover="this.src='./assets/images/socials/ic_instagram_orange.svg'"
+                  onmouseout="this.src='./assets/images/socials/ic_instagram.svg'"
+                  src="./assets/images/socials/ic_instagram.svg"
+              /></a>
+              <a class="socialsClass" href="#"
+                ><img
+                  width="20"
+                  height="20"
+                  title=""
+                  alt=""
+                  onmouseover="this.src='./assets/images/socials/ic_facebook_orange.svg'"
+                  onmouseout="this.src='./assets/images/socials/ic_facebook.svg'"
+                  src="./assets/images/socials/ic_facebook.svg"
+              /></a>
+              <a class="socialsClass" href="#"
+                ><img
+                  width="20"
+                  height="20"
+                  title=""
+                  alt=""
+                  onmouseover="this.src='./assets/images/socials/ic_twitter_orange.svg'"
+                  onmouseout="this.src='./assets/images/socials/ic_twitter.svg'"
+                  src="./assets/images/socials/ic_twitter.svg"
+              /></a>
+            </div>
+          </ul>
+        </nav>
+      </header>
       <div class="hero__main">
         <div class="hero__carousel">
-          <div class="carousel-item active" style="display: block">
-            <img
-              class="hero__carousel-img d-flex"
-              src="./assets/images/hero/dubai.png"
-            />
+          <div id="carousel__main" class="carousel__main-transition">
+            <!-- <div class="hero__carousel-div">
 
-            <img
-              class="hero__carousel-img d-flex"
-              src="./assets/images/hero/dubai.png"
-            />
+        </div> -->
+            <!-- <div class="hero__carousel-img" data-position="1">
+            <img src="./assets/images/hero/dubai.png" />
+          </div>
 
-            <img
-              class="hero__carousel-img d-flex"
-              src="./assets/images/hero/dubai.png"
-            />
+          <div class="hero__carousel-img" data-position="2">
+            <img src="./assets/images/hero/dubai.png" />
+          </div>
 
-            <img
-              class="hero__carousel-img d-flex"
-              src="./assets/images/hero/dubai.png"
-            />
+          <div class="hero__carousel-img" data-position="3">
+            <img src="./assets/images/hero/dubai.png" />
+          </div>
+
+          <div class="hero__carousel-img" data-position="4">
+            <img src="./assets/images/hero/dubai.png" />
+          </div> -->
+            <div class="hero__carousel-div" data-position="1">
+              <img
+                class="hero__carousel-img"
+                src="./assets/images/hero/dubai.png"
+              />
+
+              <div class="hero__carousel-text">
+                <div>
+                  <div class="hero__carousel-text__city">Dubai</div>
+                  <div class="hero__carousel-text__city-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras sed lacinia leo, et volutpat magna. Integer eu viverra
+                    dolor, ut tincidunt augue. Ut feugiat sem
+                  </div>
+                </div>
+                <div class="containersssssss"></div>
+              </div>
+            </div>
+
+            <div class="hero__carousel-div" data-position="2">
+              <img
+                class="hero__carousel-img"
+                src="./assets/images/hero/dubai.png"
+              />
+
+              <div class="hero__carousel-text">
+                <div>
+                  <div class="hero__carousel-text__city">Dubai</div>
+                  <div class="hero__carousel-text__city-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras sed lacinia leo, et volutpat magna. Integer eu viverra
+                    dolor, ut tincidunt augue. Ut feugiat sem
+                  </div>
+                </div>
+                <div class="containersssssss"></div>
+              </div>
+            </div>
+
+            <div class="hero__carousel-div" data-position="3">
+              <img
+                class="hero__carousel-img"
+                src="./assets/images/hero/dubai.png"
+              />
+
+              <div class="hero__carousel-text">
+                <div>
+                  <div class="hero__carousel-text__city">Dubai</div>
+                  <div class="hero__carousel-text__city-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras sed lacinia leo, et volutpat magna. Integer eu viverra
+                    dolor, ut tincidunt augue. Ut feugiat sem
+                  </div>
+                </div>
+                <div class="containersssssss"></div>
+              </div>
+            </div>
+
+            <div class="hero__carousel-div" data-position="4">
+              <img
+                class="hero__carousel-img"
+                src="./assets/images/hero/dubai.png"
+              />
+
+              <div class="hero__carousel-text">
+                <div>
+                  <div class="hero__carousel-text__city">Dubai</div>
+                  <div class="hero__carousel-text__city-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras sed lacinia leo, et volutpat magna. Integer eu viverra
+                    dolor, ut tincidunt augue. Ut feugiat sem
+                  </div>
+                </div>
+                <div class="containersssssss"></div>
+              </div>
+            </div>
+
+            <!-- <img class="hero__carousel-img" data-position="1" src="./assets/images/hero/dubai.png" />
+
+          <img class="hero__carousel-img" data-position="2" src="./assets/images/hero/dubai.png" />
+
+          <img class="hero__carousel-img" data-position="3" src="./assets/images/hero/dubai.png" />
+
+          <img class="hero__carousel-img" data-position="4" src="./assets/images/hero/dubai.png" /> -->
           </div>
         </div>
         <div class="hero__aunty">
@@ -89,7 +261,6 @@
             class="hero__aunty-img"
             src="./assets/images/hero/girl_img.png"
           /> -->
-
           <lottie-player
             src="https://assets6.lottiefiles.com/packages/lf20_h9ummwur.json"
             class="hero__aunty-img"
@@ -168,24 +339,268 @@
               </div>
             </div>
           </div>
-          <div class="aboutus__feature">
-            <div class="aboutus__feature-img">
-              <img src="./assets/images/aboutus/ic_travel.png" />
-            </div>
-            <div class="aboutus__feature-img">
-              <img src="./assets/images/aboutus/ic_ready.png" />
-            </div>
-            <div class="aboutus__feature-img">
-              <img src="./assets/images/aboutus/ic_take_me_to_the_sea.png" />
-            </div>
-            <div class="aboutus__feature-img">
-              <img src="./assets/images/aboutus/ic_around_the_world.png" />
-            </div>
-            <div class="aboutus__feature-img">
-              <img src="./assets/images/aboutus/ic_explore_more.png" />
-            </div>
-            <div class="aboutus__feature-img">
-              <img src="./assets/images/aboutus/ic_sweet_summer.png" />
+          <!-- <div class="aboutus__feature MagicScroll" data-options="step: 0; speed: 4000;">
+          <div class="aboutus__feature-img">
+            <img src="./assets/images/aboutus/ic_travel.png" />
+          </div>
+          <div class="aboutus__feature-img">
+            <img src="./assets/images/aboutus/ic_ready.png" />
+          </div>
+          <div class="aboutus__feature-img">
+            <img src="./assets/images/aboutus/ic_take_me_to_the_sea.png" />
+          </div>
+          <div class="aboutus__feature-img">
+            <img src="./assets/images/aboutus/ic_around_the_world.png" />
+          </div>
+          <div class="aboutus__feature-img">
+            <img src="./assets/images/aboutus/ic_explore_more.png" />
+          </div>
+          <div class="aboutus__feature-img">
+            <img src="./assets/images/aboutus/ic_sweet_summer.png" />
+          </div>
+        </div> -->
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_around_the_world.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_explore_more.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_ready.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_sweet_summer.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_take_me_to_the_sea.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_travel.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_around_the_world.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_explore_more.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_ready.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_sweet_summer.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_take_me_to_the_sea.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_travel.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_around_the_world.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_explore_more.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_ready.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_sweet_summer.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_take_me_to_the_sea.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_travel.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_around_the_world.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_explore_more.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_ready.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_sweet_summer.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_take_me_to_the_sea.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_travel.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_around_the_world.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_explore_more.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_ready.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_sweet_summer.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_take_me_to_the_sea.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/aboutus/ic_travel.png"
+                  height="100"
+                  width="100"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -205,13 +620,18 @@
         <div class="hww__each-content-image">
           <div class="hww__image-details">
             <img class="hww_image" src="./assets/images/howWeWork/HWW1.png" />
-            <div class="hww__image-text-details">
+            <p class="hww__image-text-details">
               Understanding your Preferences
-            </div>
-            <div class="hww__image-text-small">
+            </p>
+            <p class="hww__image-text-small">
               Founded in 1996 in Amsterdam, traveloky has grown from a small
               Dutch start4up to one of the world’s leading digital travel
               companies.
+            </p>
+            <div class="containersssssss">
+              <div id="progresssss">
+                <!-- <div id="myBar"></div> -->
+              </div>
             </div>
           </div>
           <div class="hww__image-details">
@@ -522,142 +942,32 @@
         </div>
       </section>
     </div>
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <div class="containersssssss">
-      <div id="progresssss">
-        <!-- <div id="myBar"></div> -->
-      </div>
-    </div>
-
-    <br />
-    <br />
-
-    <div class="contt">
-      <div id="doness"></div>
-    </div>
-
-    <button onclick="move()">Click ME</button>
-
     <footer>
       <div class="ribbon__main-footer">
+        <div class="ribbon__main-copyright">
+          <a class="ribbon__main-copyright-text" href="#">Cookie policy</a>
+          <a class="ribbon__main-copyright-text" href="#"
+            >Copyright complaints</a
+          >
+          <a class="ribbon__main-copyright-text" href="#">Privacy policy</a>
+          <a class="ribbon__main-copyright-text" href="#"
+            >Terms and conditions</a
+          >
+        </div>
         <a class="ribbon__main-text">
           &copy 2021 Admireasia.com. All Rights Reserved.
         </a>
       </div>
     </footer>
 
-    <style>
-      .containersssssss {
-        position: relative;
-        background-color: red;
-        width: 80%;
-        margin: 0px 10%;
-        border: 1px solid black;
-      }
-
-      .contt {
-        position: relative;
-        width: 80%;
-        margin: 0px 10%;
-        border: 1px solid black;
-      }
-
-      #doness {
-        height: 8px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: red;
-        margin-top: -4px;
-        border-radius: 10px;
-        width: 10%;
-        transition: width 5s ease-in-out;
-      }
-
-      #progresssss {
-        height: 8px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: red;
-        margin-top: -4px;
-        border-radius: 10px;
-      }
-
-      #myProgress {
-        width: 100%;
-        background-color: #ddd;
-        height: 1px;
-      }
-
-      #myBar {
-        width: 20%;
-        height: 5px;
-        background-color: black;
-        border-radius: 20px;
-        z-index: 9;
-      }
-    </style>
-
-    <script type="text/javascript">
-      function move() {
-        var elems = (document.getElementById("doness").style.width = "100%");
-        var elem = document.getElementById("progresssss");
-        var width = 0.5;
-        // change the milliseconds to 10 or 5 to fill it relatively faster
-        var id = setInterval(frame, 20);
-
-        function frame() {
-          if (width >= 100) {
-            clearInterval(id);
-            elem.style.width = "0%";
-          } else {
-            width += 0.5;
-            elem.style.width = width + "%";
-          }
-        }
-      }
-    </script>
-    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./js/testimonial-animation.js"></script>
+    <script src="./js/hero-animation.js"></script>
     <script src="./main.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
